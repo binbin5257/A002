@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp">
+    <ListView
+        android:id="@+id/list_choose_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rect_corners_white"
+        android:divider="#F7F7F7"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#F7F7F7"/>
+
+</LinearLayout>

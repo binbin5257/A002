@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "data": {
+    "id": 1,
+    "no": "Order1N7HJQL1XTWH",
+    "status": "ALLOCATED",
+    "vehicleResourceId": 1,
+    "vehicleModelName": "宝马X1",
+    "plateLicenseNo": "京A123456",
+    "reservationLocationId": 1,
+    "reservationLocationName": "上地停车场",
+    "reservationLocationAddress": "北京市海淀区上地10街",
+    "returnLocationId": null,
+    "returnLocationName": null,
+    "returnLocationAddress": null,
+    "reservationTime": 1465974510498,
+    "pickedUpTime": null,
+    "droppedOffTime": null,
+    "startOdometer": 0,
+    "endOdometer": 0,
+    "startSoc": 0,
+    "endSoc": 0
+  }
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroud"
+              android:orientation="vertical">
+
+    <include layout="@layout/topbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroud"/>
+    <LinearLayout
+        android:id="@+id/ll_feedback_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_rect_corners_white"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="sfdafdadf"
+                android:padding="4dp"
+                android:maxLength="1000"
+                android:textColor="#a8a8a8"/>
+            <TextView
+                android:id="@+id/tv_text_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0/1000"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:padding="4dp"
+                android:textColor="#a8a8a8"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_login"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="提交反馈"
+            android:padding="8dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/bg_feedback_suc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#a8a8a8"
+            android:text="感谢你的反馈，我们一直在努力！" />
+    </RelativeLayout>
+
+
+</LinearLayout>

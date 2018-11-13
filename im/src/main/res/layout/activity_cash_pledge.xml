@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical"
+    tools:context="cn.lds.im.view.CashPledgeActivity">
+
+    <include layout="@layout/topbar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cash_pledge_height"
+        android:layout_marginLeft="@dimen/marginRight"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/marginRight"
+        android:background="@color/cash_pledge_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash_pledge_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_16" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/wallet_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_size_7"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginRight"
+        android:layout_marginRight="@dimen/marginRight"
+        android:background="@drawable/bg_cash_pledge"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_info_height"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_size_10"
+                android:text="@string/cash_pledge_more"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_15" />
+
+            <TextView
+                android:id="@+id/cash_pledge_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/padding_size_10"
+                android:text=""
+                android:textColor="@color/cash_pledge_more"
+                android:textSize="@dimen/txt_size_16"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/cash_wechat_rly"
+            android:layout_marginTop="-1dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_info_height"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/cash_wechat_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_size_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/order_wechat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cash_wechat_iv"
+                android:layout_marginLeft="@dimen/margin_size_5"
+                android:text="@string/cash_pledge_wechat"
+                android:layout_centerVertical="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_15" />
+
+            <ImageView
+                android:id="@+id/cash_wechat_select_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/padding_size_10"
+                android:paddingLeft="@dimen/padding_size_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_cash_select"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg" />
+
+        <RelativeLayout
+            android:id="@+id/cash_alipay_rly"
+            android:layout_marginTop="-1dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/personal_info_height"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/cash_alipay_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_size_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/order_alipay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cash_alipay_iv"
+                android:layout_marginLeft="@dimen/margin_size_5"
+                android:text="@string/cash_pledge_alipay"
+                android:layout_centerVertical="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_15" />
+
+            <ImageView
+                android:id="@+id/cash_alipay_select_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/padding_size_10"
+                android:paddingLeft="@dimen/padding_size_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_cash_cirle"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/wallet_promt_rly"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingRight="17dp">
+
+        <TextView
+            android:id="@+id/wallet_remind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_padding_left"
+            android:text="@string/wallet_cpromt"
+            android:textColor="@color/identifying_color"
+            android:textSize="@dimen/txt_size_13" />
+
+        <LinearLayout
+            android:id="@+id/wallet_remind_lly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_toRightOf="@+id/wallet_remind_tv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cash_identify_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_padding_left"
+                android:text="去认证"
+                android:layout_toLeftOf="@+id/wallet_iv"
+                android:textColor="@color/submenu_identification"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/wallet_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/icon_me_detailed" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/default_padding_left"
+        android:gravity="bottom"
+        android:layout_marginRight="@dimen/default_padding_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rechargeactivity_confirm_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/order_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_confirm_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/rechargeactivity_recharge_rightnow"
+            android:textColor="@color/White"
+            android:textSize="@dimen/order_confirm_size" />
+    </LinearLayout>
+</LinearLayout>

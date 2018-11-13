@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <cn.lds.im.view.widget.WelcomeGifView
+        android:id="@+id/gifview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/welcome_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome"
+        android:visibility="visible"/>
+
+
+    <RelativeLayout
+        android:id="@+id/welcome_rlly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/welcome_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/welcome_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/welcome_viewpager"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                style="@style/main_tab"
+                android:drawableTop="@drawable/indicator_welcome"/>
+
+            <RadioButton
+                style="@style/main_tab"
+                android:drawableTop="@drawable/indicator_welcome"/>
+
+            <RadioButton
+                style="@style/main_tab"
+                android:drawableTop="@drawable/indicator_welcome"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

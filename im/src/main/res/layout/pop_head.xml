@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_select"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/pop_public_cancel_shangchuantouxiang"
+            android:textColor="@color/titlecolor"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pop_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/pop_type_file_paizhao"
+            android:textColor="@color/textcolor_blue"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/pop_meida"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/pop_public_cancel_congxiangcezhongxuanze"
+            android:textColor="@color/textcolor_blue"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0"
+        android:background="@drawable/button_select"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/common_cancel"
+        android:textColor="@color/titlecolor"
+        android:textSize="16dp" />
+
+</LinearLayout>

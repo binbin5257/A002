@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="cn.lds.im.view.RouteComentsActivity">
+
+    <include layout="@layout/topbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:layout_marginTop="@dimen/routedetail_margin24"
+            android:background="@color/line_bg" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/route_height130"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_left_1_default"
+            android:paddingRight="@dimen/margin_left_1_default">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/routecomentsactivity_score"
+                android:textColor="@color/costsheetactivity_costsheet"
+                android:textSize="@dimen/text_size_41" />
+
+            <RatingBar
+                android:id="@+id/routecoment_ratingBar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:background="@color/line_bg" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_textarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_textarea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:gravity="top|left"
+            android:hint="@string/routecomentsactivity_inputhint"
+            android:maxHeight="100dp"
+            android:minHeight="100dp"
+            android:padding="@dimen/margin_left_1_default"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_41" />
+
+        <TextView
+            android:id="@+id/rp_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_textarea"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_left_1_default"
+            android:padding="3dp"
+            android:text="0/200"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:layout_marginTop="@dimen/routedetail_margin24"
+        android:background="@color/line_bg" />
+
+    <TextView
+        android:id="@+id/tv_setting_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/order_item_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_left_1_default"
+        android:layout_marginRight="@dimen/margin_left_1_default"
+        android:layout_marginTop="@dimen/routedetail_margin50"
+        android:layout_weight="0"
+        android:background="@drawable/btn_confirm_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/routecomentsactivity_commit"
+        android:textColor="@color/White"
+        android:textSize="@dimen/text_size_58" />
+</LinearLayout>

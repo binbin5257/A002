@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "data": {
+    "id": 1,
+    // 所在场站ID。不在任何场站返回NULL
+    "name": "上地停车场"
+  }
+}

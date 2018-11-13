@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/main_view">
+
+    <include layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_confirm_order_car_info" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/important_color_brown">
+
+                <TextView
+                    android:id="@+id/take_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/take_tips"
+                    android:gravity="center">
+
+                    <cn.lds.im.view.widget.CircleArcProgressbar
+                        android:id="@+id/circle_progressbar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_curve" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/prompt_take_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/take_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/take_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/icon_order_location"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/take_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/take_rl"
+                    android:text="取车场站"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <LinearLayout
+                    android:layout_toLeftOf="@+id/take_car_navigation_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/take_txt"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/prompt_take_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/important_text_color_black"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <TextView
+                        android:id="@+id/prompt_take_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/txt_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_car_navigation_lyt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/takecar_navigation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/take_car_navigation"
+                        android:textColor="@color/important_color_blue"
+                        android:textSize="@dimen/txt_size_13" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/take_car_lamp_lyt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/takecar_lamp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="车辆闪灯"
+                        android:textColor="@color/normal_text_color_dark_gray"
+                        android:textSize="@dimen/txt_size_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_car_seek_lyt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@+id/take_car_lamp_lyt"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/takecar_seek" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="鸣笛闪灯"
+                        android:textColor="@color/normal_text_color_dark_gray"
+                        android:textSize="@dimen/txt_size_13" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/take_car_customer_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/take_car_lamp_lyt"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/icon_custmer_service" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="联系客服"
+                        android:textColor="@color/normal_text_color_dark_gray"
+                        android:textSize="@dimen/txt_size_13" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击取车拍照表示已同意"
+                    android:textColor="@color/normal_text_color_dark_gray"
+                    android:textSize="@dimen/txt_size_10" />
+
+                <TextView
+                    android:id="@+id/order_protocol_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《用车注意事项》"
+                    android:textColor="@color/important_color_blue"
+                    android:textSize="@dimen/txt_size_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/take_car_lock"
+                style="@style/DefaultConfirmButton_Blue_Rectangle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/margin_left_1_default"
+                android:layout_marginRight="@dimen/margin_left_1_default"
+                android:layout_marginTop="8dp"
+                android:text="取车拍照" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

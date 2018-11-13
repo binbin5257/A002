@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rlyt_routedetail_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/item_routelistview_firstitem"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/White"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/route_height130"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:background="@color/seletcedcommon_unseletced"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_routelistview_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已取消"
+                    android:textColor="@color/seletcedcommon_unseletced"
+                    android:textSize="@dimen/text_size_58"/>
+
+                <ImageView
+                    android:id="@+id/dfsfd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/item_routelistview_next_cancel"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_routelistview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/item_routelistview_time_cancel"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@color/seletcedcommon_unseletced"
+                android:textSize="@dimen/text_size_41"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_bg"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/route_height256">
+
+
+            <TextView
+                android:id="@+id/item_routelistview_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="22dp"
+                android:text="已评价"
+                android:textSize="@dimen/text_size_41"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预定车辆 ："
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                    <TextView
+                        android:id="@+id/item_routelistview_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车        牌 ："
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                    <TextView
+                        android:id="@+id/item_routelistview_carcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取车地点 ："
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                    <TextView
+                        android:id="@+id/item_routelistview_carplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/seletcedcommon_unseletced"
+                        android:textSize="@dimen/text_size_41"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_routelistview_lastitem"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:layout_marginBottom="20dp"
+            android:background="@color/seletcedcommon_unseletced"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

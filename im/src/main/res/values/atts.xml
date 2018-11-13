@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashedLineView">
+        <attr name="dashWidth" format="dimension" />
+        <attr name="dashlineWidth" format="dimension" />
+        <attr name="dashlineHeight" format="dimension" />
+        <attr name="dashlineColor" format="color" />
+        <attr name="dashOrientation" format="integer" />
+
+    </declare-styleable>
+</resources>

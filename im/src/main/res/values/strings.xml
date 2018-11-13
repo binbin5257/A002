@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智网出行</string>
+    <string name="app_about">云钥匙Android客户端</string>
+    <string name="app_about1">智网出行Android客户端</string>
+
+    <!-- 侧滑栏-->
+    <string name="submenu_identification">已认证</string>
+    <string name="submenu_no_identification">未认证</string>
+
+    <!-- 登陆页-->
+    <string name="login_tel">请输入手机号</string>
+    <string name="login_identify_code">请输入验证码</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_get_code">获取验证码</string>
+
+    <!-- 认证页-->
+    <string name="identifying_name">输入真实姓名</string>
+    <string name="identifying_ID">输入身份证号</string>
+    <string name="identifying_NO">输入档案编号</string>
+    <string name="identifying_license">驾驶证（正副本）</string>
+    <string name="identifying_prompt">提示:</string>
+    <string name="identifying_prompt_1">1、证件过期、照片不清晰以及非本人证件会影响审核结果。</string>
+    <string name="identifying_prompt_2">2、如发现冒用他人证件，将追究法律责任。</string>
+    <string name="identifying_help">帮助</string>
+    <string name="identifying_help_detail">认证帮助</string>
+
+    <!-- 客服页-->
+
+    <!-- 设置页-->
+    <string name="cancel">注销</string>
+
+    <!-- 消息-->
+    <string name="message_not_read">忽略未读</string>
+
+    <!-- 弹出框-->
+    <string name="pop_window_confirm">开始认证</string>
+    <string name="pop_window_cancel">暂不认证</string>
+
+    <!-- 订单确认-->
+    <string name="choicebooktime_taketime">选择取车时间</string>
+    <string name="choicebooktime_returntime">选择还车时间</string>
+    <string name="order_send_car_money">送车上门需%1$s元送车费</string>
+
+
+    <!-- 钱包-->
+    <string name="wallet_amount">金额</string>
+    <string name="wallet_balance">账户余额（元）</string>
+    <string name="wallet_details">明细</string>
+    <string name="wallet_coupon">优惠劵</string>
+    <string name="wallet_cpromt">您还未进行身份验证？</string>
+    <string name="wallet_account_details">账户明细</string>
+    <string name="has_no_more_data">没有更多数据了</string>
+    <string name="has_no_data">您还没有数据</string>
+
+    <!-- 充值-->
+    <string name="recharge_amount_prompt">请输入充值金额</string>
+    <string name="recharge_remind">充值遇到问题？</string>
+    <string name="recharge_contact">联系我们</string>
+
+    <!-- 违章-->
+    <string name="peccancy_position">违章地点</string>
+    <string name="peccancy_type">违章类型</string>
+    <string name="peccancy_time">违章时间</string>
+    <string name="fine_money">罚款金额</string>
+    <string name="deduction">扣分情况</string>
+    <string name="any_question">如有疑问请，</string>
+    <string name="peccancy_contact">联系客服</string>
+
+    <!-- 押金-->
+    <string name="cash_pledge_amount">已缴纳押金</string>
+    <string name="cash_pledge_more">还需缴纳押金</string>
+    <string name="cash_pledge_wechat">微信支付</string>
+    <string name="cash_pledge_alipay">支付宝支付</string>
+    <string name="cash_pledge_reback">申请退款</string>
+    <string name="cash_pledge_reback_success">申请退款成功</string>
+    <string name="cash_pledge_reback_result">退款结果</string>
+    <string name="cash_pledge_reback_directions">退款说明</string>
+    <string name="cash_pledge_reback_money">退押金</string>
+
+    <!-- 发票-->
+    <string name="receipt_amount">可开发票总额(元)</string>
+    <string name="receipt_mine">我的发票</string>
+    <string name="receipt_success">申请成功</string>
+    <string name="receipt_build_success">发票申请成功</string>
+    <string name="receipt_remind">注:提交发票申请后，不能修改不能取消。</string>
+    <string name="receipt_success_remind">发票将在7-10个工作日内送达，请注意查收!</string>
+
+    <!-- 优惠劵-->
+    <string name="coupon_title">优惠劵</string>
+
+    <!-- 设置-->
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_exit">退出登录</string>
+
+    <!-- 时间控件提示-->
+    <string name="time_picker_tips">取车时间必须早于还车时间</string>
+
+    <!-- 押金-->
+    <string name="foregift_quota_tips">您的押金不足，请充值</string>
+
+    <!-- 续航里程-->
+    <string name="sustained_mileage">续航%1$skm</string>
+
+    <string name="order_get_car_money">上门取车需%1$s元取车费</string>
+
+    <string name="take_car_content">规定时间</string>
+    <string name="take_car_tips">请在%1$s内完成取车，否则订单自动取消</string>
+
+    <!--各列表页没有数据时的提示信息-->
+    <string name="no_data_trip">还没有行程信息哦~~</string>
+    <string name="no_data_event">还没有活动信息哦~~</string>
+    <string name="no_data_illegal">还没有违章信息哦~~</string>
+    <string name="no_data_cost">还没有账户明细信息哦~~</string>
+    <string name="no_data_receipt">还没有发票信息哦~~</string>
+    <string name="no_data_coupon">还没有优惠劵信息哦~~</string>
+</resources>

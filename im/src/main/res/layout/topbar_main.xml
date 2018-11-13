@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/top_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_half"
+        android:contentDescription="action_settings"/>
+
+    <LinearLayout
+        android:id="@+id/top_title_lly"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/top_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titlesize"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/top_title_dirve_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titlesize"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/top_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/margin_size_15"
+            android:drawableBottom="@drawable/bg_drop_down"
+            android:drawablePadding="@dimen/margin_left_1_default"
+            android:singleLine="true"
+            android:text="公务用车"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titlesize"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_menu_lly"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <Button
+            android:id="@+id/top_menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/margin_size_15"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/bg_me"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_menu_rly"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/top_menu_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16.3dp"
+            android:clickable="false"
+            android:src="@drawable/bg_home_search"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/top__iv"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/top_bg_iv"
+        android:background="#00000000"
+        android:contentDescription="action_settings"/>
+
+</RelativeLayout>

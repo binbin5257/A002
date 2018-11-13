@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud">
+    <include layout="@layout/topbar"/>
+    <RelativeLayout
+        android:id="@+id/rl_choice_use_car_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/user_department_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="用车日"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+
+        <EditText
+            android:id="@+id/choice_user_car_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:hint="选择用车日期"
+            android:focusable="false"
+            android:enabled="true"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/iv_user_car"
+            android:textColor="@color/textcolor80"
+            android:textSize="@dimen/txt_size_14" />
+        <ImageView
+            android:id="@+id/iv_user_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_me_detailed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_default"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_bg" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_choice_use_car_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left"
+        >
+
+        <TextView
+            android:id="@+id/user_start_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="开始时间"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+
+        <EditText
+            android:id="@+id/choice_user_car_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:hint="选择用车开始时间"
+            android:enabled="true"
+            android:focusable="false"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/iv_user_car_start_time"
+            android:textColor="@color/textcolor80"
+            android:textSize="@dimen/txt_size_14" />
+        <ImageView
+            android:id="@+id/iv_user_car_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_me_detailed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_default"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_bg" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_choice_use_car_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left"
+        >
+
+        <TextView
+            android:id="@+id/user_end_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="结束时间"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+
+        <EditText
+            android:id="@+id/choice_user_car_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:hint="选择用车结束时间"
+            android:focusable="false"
+            android:enabled="true"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/iv_user_car_end_time"
+            android:textColor="@color/textcolor80"
+            android:textSize="@dimen/txt_size_14" />
+        <ImageView
+            android:id="@+id/iv_user_car_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_me_detailed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_default"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_bg" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left">
+
+        <TextView
+            android:id="@+id/_approver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="审批人"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+
+        <TextView
+            android:id="@+id/tv_approver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/iv_approver"
+            android:textColor="@color/textcolor80"
+            android:textSize="@dimen/txt_size_14" />
+        <ImageView
+            android:id="@+id/iv_approver"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_me_detailed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_default"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_bg" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left">
+
+        <TextView
+            android:id="@+id/_approver_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="审批人电话"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+
+        <TextView
+            android:id="@+id/tv_approver_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/iv_approver_phone"
+            android:textColor="@color/important_color_blue"
+            android:textSize="@dimen/txt_size_14" />
+        <ImageView
+            android:id="@+id/iv_approver_phone"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/icon_me_detailed" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_default"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_bg" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_info_height"
+        android:background="@drawable/text_bg"
+        android:clickable="false"
+        android:paddingLeft="@dimen/default_padding_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="申请说明"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white">
+        <EditText
+            android:id="@+id/et_des"
+            android:background="@drawable/bg_rect_corners_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_padding_left"
+            android:layout_marginRight="@dimen/default_padding_left"
+            android:layout_marginBottom="@dimen/default_padding_left"
+            android:maxLength="100"
+            android:gravity="start"
+            android:padding="8dp"
+            android:textSize="14sp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

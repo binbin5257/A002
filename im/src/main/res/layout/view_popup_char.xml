@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="45dp"
+    android:textColor="@android:color/white"
+    android:background="#40000000"
+    android:minWidth="70dip"
+    android:maxWidth="70dip"
+    android:gravity="center"
+/>

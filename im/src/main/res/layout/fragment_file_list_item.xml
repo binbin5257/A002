@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_contact_public_account_item"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_hight_large"
+    android:background="@drawable/list_selector_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- 头像 -->
+
+        <ImageView
+            android:id="@+id/file_item_image"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/slidemenu_avtar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/file_item_name"
+                android:layout_width="match_parent"
+                android:textColor="#323232"
+                android:textSize="13dp"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/file_item_size"
+                android:layout_width="match_parent"
+                android:textColor="#aaaaaa"
+                android:text=""
+                android:textSize="12dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="#e1e1e1"
+        android:orientation="vertical" />
+</LinearLayout>

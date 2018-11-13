@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vux-seed</title>
+</head>
+<body style="margin:0;">
+<div id="allmap"></div>
+<img class="img1" src="./img/car.png">
+<div style="display: table;width: 100%;margin-top: -5px;">
+    <div style="display: table-row;">
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('refueling')">
+                <img class="img2" src="./img/refueling.png">
+                <div style="text-align: center;color: white;">加油服务</div>
+            </div>
+        </div>
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('peccancy')">
+                <img class="img2" src="./img/peccancy.png">
+                <div style="text-align: center;color: white;">违章查询和代缴</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: table-row">
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('charging')">
+                <img class="img2" src="./img/charging.png">
+                <div style="text-align: center;color: white;">充电服务</div>
+            </div>
+        </div>
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('driving')">
+                <img class="img2" src="./img/driving.png">
+                <div style="text-align: center;color: white;">呼叫代驾</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: table-row">
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('maintain')">
+                <img class="img2" src="./img/maintain.png">
+                <div style="text-align: center;color: white;">汽车保养</div>
+            </div>
+        </div>
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('insurance')">
+                <img class="img2" src="./img/insurance.png">
+                <div style="text-align: center;color: white;">汽车保险</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: table-row">
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('parking')">
+                <img class="img2" src="./img/parking.png">
+                <div style="text-align: center;color: white;">停车服务</div>
+            </div>
+        </div>
+        <div style="display:table-cell;background-color: black;width: 50%;padding: 5px;">
+            <div style="background-color: #28292B;border-radius: 10px 10px 10px 10px;padding: 5px;"
+                 onclick="getView('agency')">
+                <img class="img2" src="./img/agency.png">
+                <div style="text-align: center;color: white;">车务代办</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script>
+    var lat;
+    var lng;
+    function onGeoSuccess (event) {
+        lat = event.coords.latitude;
+        lng = event.coords.longitude;
+    }
+    function onGeoError (event) {
+        alert('Error code ' + event.code + '. ' + event.message)
+    }
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError)
+    } else {
+        alert('当前设备不支持定位！')
+    }
+    function getView (type) {
+        if (type === 'refueling') {
+            AndroidWebView.sendLoadUrl('https://dev.yobangbang.com/ybb2/login.html?tel=18876543210&channel=ceshi', '加油服务')
+        } else if (type === 'driving') {
+            AndroidWebView.sendLoadUrl('https://h5.edaijia.cn/app/index.html?from=', '呼叫代驾')
+        } else if (type === 'peccancy') {
+            AndroidWebView.sendLoadUrl('http://webtest.cx580.com:10001/illegal?user_id=123456&user_from=sograndwap&token=bUSNUlLO%2fOBf4WOK9GHw1wUBh6DN5amHLLqwkatz5VM%3d', '违章查询和代缴')
+        } else if (type === 'charging') {
+            <!--AndroidWebView.sendLoadUrl('http://47.95.230.159:8888/#/map?lng=' + lng + '&lat=' + lat, '充电服务')-->
+            AndroidWebView.sendLoadUrl('http://47.95.230.159:8888/#/map', '充电服务')
+        } else {
+            <!--console.log(111)-->
+            AndroidWebView.developing()
+        }
+    }
+
+</script>
+<style>
+    .img1 {
+        width: 100%;
+        margin-top: -50px;
+    }
+    .img2 {
+        width: 100%;
+    }
+</style>
+</html>

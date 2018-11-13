@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="cn.lds.im.view.LoginActivity">
+
+    <include layout="@layout/topbar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="@color/line_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llyt_identify_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/identifying_no_name_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:text="姓名"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <EditText
+                        android:id="@+id/identifying_no_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:layout_marginRight="@dimen/margin_left_1_default"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:hint="@string/identifying_name"
+                        android:background="@null"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:background="@color/line_bg" />
+
+                <LinearLayout
+                    android:id="@+id/identifying_no_car_lyt"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:text="身份证"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <EditText
+                        android:id="@+id/identifying_no_car_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:layout_marginRight="@dimen/margin_left_1_default"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:hint="@string/identifying_ID"
+                        android:text=""
+                        android:background="@null"
+                        android:maxLength="18"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_14" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:background="@color/line_bg" />
+
+                <LinearLayout
+                    android:id="@+id/identifying_no_driving_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:text="驾驶证档案编号"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <EditText
+                        android:id="@+id/identifying_no_driving_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:layout_marginRight="@dimen/margin_left_1_default"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text=""
+                        android:background="@null"
+                        android:textColor="@color/title_text_color"
+                        android:hint="@string/identifying_NO"
+                        android:textSize="@dimen/txt_size_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_12"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llyt_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_identify_status_bar"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/margin_left_1_default"
+                        android:paddingRight="@dimen/margin_left_1_default">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/identifyingactivity_idcard1"
+                            android:textColor="@color/identifying_color"
+                            android:textSize="@dimen/txt_size_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/identifyingactivity_idcard2"
+                            android:textColor="@color/identifying_color"
+                            android:textSize="@dimen/txt_size_15" />
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/bg_refruse_check"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:background="@drawable/bg_refruse_reason"
+                            android:text="身份证不清晰"
+                            android:textSize="10sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:background="@color/line_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:padding="@dimen/margin_size_15"
+                        android:orientation="horizontal">
+                        
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_identify_425"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/margin_left_2_default"
+                                android:layout_marginRight="@dimen/margin_left_2_default"
+                                android:background="@drawable/bg_idcard_front">
+
+                                <ImageView
+                                    android:id="@+id/identifying_iv1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY" />
+
+                            </FrameLayout>
+                            <!--<ImageView-->
+                                <!--android:id="@+id/identifying_iv1_1"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:src="@drawable/bg_checking"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:layout_marginTop="4dp"-->
+                                <!--android:visibility="gone"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:id="@+id/identifying_refruse_reason"-->
+                                <!--android:layout_width="70dp"-->
+                                <!--android:layout_height="16dp"-->
+                                <!--android:background="@drawable/bg_refruse_reason"-->
+                                <!--android:text="身份证号无效！"-->
+                                <!--android:textSize="6sp"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:padding="4dp"-->
+                                <!--android:gravity="center"-->
+                                <!--android:layout_toRightOf="@id/identifying_iv1_1"-->
+                                <!--android:layout_alignTop="@+id/identifying_iv1_1"-->
+                                <!--android:visibility="gone"/>-->
+
+                            <Button
+                                android:id="@+id/identify_take_picture1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/bg_identify_iv" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_identify_425"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/margin_left_2_default"
+                                android:layout_marginRight="@dimen/margin_left_2_default"
+                                android:background="@drawable/bg_idcard_back">
+
+                                <ImageView
+                                    android:id="@+id/identifying_iv3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"/>
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/identify_take_picture3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/bg_identify_iv" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/identifying_idcard_passed"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/identify_ok"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_12"
+                    android:background="@color/White"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_identify_status_bar"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/margin_left_1_default"
+                        android:paddingRight="@dimen/margin_left_1_default">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/identifying_license"
+                            android:textColor="@color/identifying_color"
+                            android:textSize="@dimen/txt_size_15" />
+                        <ImageView
+                            android:id="@+id/id_card_check_status"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/bg_checking"
+                            />
+                        <TextView
+                            android:id="@+id/card_check_refrush_reason"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:background="@drawable/bg_refruse_reason"
+                            android:text="身份证不清晰"
+                            android:textSize="10sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:background="@color/line_bg" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="105dp"
+                        android:padding="@dimen/margin_size_15"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_identify_425"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/margin_left_2_default"
+                                android:layout_marginRight="@dimen/margin_left_2_default"
+                                android:background="@drawable/bg_drivecard_front">
+
+                                <ImageView
+                                    android:id="@+id/identifying_iv2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"/>
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/identify_take_picture2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/bg_identify_iv" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_identify_425"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/margin_left_2_default"
+                                android:layout_marginRight="@dimen/margin_left_2_default"
+                                android:background="@drawable/bg_drivecard_back">
+
+                                <ImageView
+                                    android:id="@+id/identifying_iv4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY" />
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/identify_take_picture4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/bg_identify_iv" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/identifying_dirvercard_passed"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/identify_ok"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_marginTop="@dimen/margin_size_12"
+                    android:text="@string/identifying_prompt"
+                    android:textColor="@color/login_hint_color"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_marginTop="@dimen/margin_size_5"
+                    android:text="@string/identifying_prompt_1"
+                    android:textColor="@color/login_hint_color"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_marginTop="@dimen/margin_size_5"
+                    android:text="@string/identifying_prompt_2"
+                    android:textColor="@color/login_hint_color"
+                    android:textSize="@dimen/txt_size_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_identify_submiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_identify_110"
+                android:layout_marginTop="@dimen/margin_identify_190"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_identify_65"
+                    android:text="@string/identifyingactivity_shenhezhong"
+                    android:textColor="@color/textcolor_orange"
+                    android:textSize="@dimen/textsize_identifying" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/identifyingactivity_shenhezhonghint"
+                    android:textColor="@color/costsheetactivity_costsheet"
+                    android:textSize="@dimen/textsize_identifying_hint" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/identifyingactivity_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_item_height"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_size_15"
+                android:layout_marginLeft="@dimen/margin_left_1_default"
+                android:layout_marginRight="@dimen/margin_left_1_default"
+                android:layout_marginTop="@dimen/submenu_margin"
+                android:background="@drawable/btn_confirm_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/identifyingactivity_submit"
+                android:textColor="@color/White"
+                android:textSize="@dimen/textsize_identify_status_bar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

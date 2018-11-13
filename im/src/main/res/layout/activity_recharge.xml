@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical"
+    android:id="@+id/root_view"
+    tools:context="cn.lds.im.view.RechargeActivity">
+
+    <include layout="@layout/topbar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+    <RelativeLayout
+        android:id="@+id/rl_department_balance"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="@dimen/margin_size_12"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_padding_left"
+            android:text="部门充值余额"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_15" />
+
+        <TextView
+            android:id="@+id/tv_department_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_padding_right"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:text="¥0.00"
+            android:textSize="@dimen/txt_size_14"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_department_monthRemainAmount"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_padding_left"
+            android:text="部门定额度余额"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/txt_size_15" />
+
+        <TextView
+            android:id="@+id/tv_department_monthRemainAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_padding_right"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:text="¥0.00"
+            android:textSize="@dimen/txt_size_14"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/order_payment_method_ryt"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="@dimen/margin_size_15"
+        android:background="@drawable/text_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_padding_left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/order_payment_method"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_padding_right">
+
+            <ImageView
+                android:id="@+id/order_payment_method_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/order_wechat" />
+
+            <TextView
+                android:id="@+id/order_payment_method_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:text="@string/order_weixinpay"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:src="@drawable/icon_me_detailed" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:layout_marginTop="@dimen/margin_size_12"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_padding_left"
+        android:text="@string/wallet_amount"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/txt_size_15" />
+
+    <EditText
+        android:id="@+id/recharge_amount_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/recharge_amount_prompt"
+        android:textColorHint="@color/login_hint_color"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:maxLength="8"
+        android:layout_marginRight="@dimen/default_padding_right"
+        android:gravity="right"
+        android:textSize="@dimen/txt_size_14"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_padding_left"
+            android:text="@string/recharge_remind"
+            android:textColor="@color/identifying_color"
+            android:textSize="@dimen/txt_size_15" />
+
+        <ImageView
+            android:id="@+id/recharge_contact_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_contact"
+            android:layout_toLeftOf="@+id/recharge_contact_tv"
+            android:layout_marginRight="@dimen/margin_size_5"
+            />
+
+        <TextView
+            android:id="@+id/recharge_contact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/recharge_contact"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_padding_right"
+            android:textSize="@dimen/txt_size_15"
+            android:textColor="@color/submenu_identification"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_padding_left"
+        android:layout_marginRight="@dimen/default_padding_right"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rechargeactivity_clickbtn_recharge"
+                android:textColor="@color/default_color_gray"
+                android:textSize="@dimen/order_prompt_text_size" />
+
+            <TextView
+                android:id="@+id/rechargeactivity_recharge_agreements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rechargeactivity_recharge_agreements"
+                android:textColor="@color/order_car_info_text_color"
+                android:textSize="@dimen/order_prompt_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rechargeactivity_confirm_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/order_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/btn_confirm_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/rechargeactivity_recharge_rightnow"
+            android:textColor="@color/White"
+            android:textSize="@dimen/order_confirm_size" />
+    </LinearLayout>
+</LinearLayout>

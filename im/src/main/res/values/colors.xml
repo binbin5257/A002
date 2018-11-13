@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- topbar_main -->
+    <color name="White">#FFFFFF</color>
+    <color name="title_text_color">#FF333333</color>
+    <color name="background">#FFFAFAFA</color>
+    <color name="line_bg">#CFCFCFCF</color>
+
+    <!--侧滑栏-->
+    <color name="submenu_identification">#FF10BFAF</color>
+    <color name="submenu_no_identification">#FFF0AFAF</color>
+    <color name="event_detail_text_color">#FF9B9B9B</color>
+
+    <!--登陆页-->
+    <color name="login_hint_color">#FF999999</color>
+
+    <!--个人信息-->
+    <color name="profile_info_color">#FFA2A1A1</color>
+
+    <!--消息-->
+    <color name="message_name">#FF424242</color>
+    <color name="message_time">#FFABABAB</color>
+    <color name="message_detail">#FF9E9E9E</color>
+
+    <!--身份认证-->
+    <color name="identifying_color">#FF808080</color>
+
+    <!--弹出框-->
+    <color name="pop_window_color">#FF030303</color>
+    <color name="pop_window_unidentify">#FFAEAEAE</color>
+
+    <!--押金-->
+    <color name="cash_pledge_color">#FF1A3C58</color>
+    <color name="cash_pledge_more">#FFFF8888</color>
+    <color name="reback_success">#FF6B6B6B</color>
+
+
+    <!--发票-->
+    <color name="receipt_color">#FF5F5F5F</color>
+    <color name="receipt_instructions_color">#FF858585</color>
+    <color name="build_receipt_color">#FF666666</color>
+    <color name="build_receipt_txt_color">#FF707070</color>
+    <color name="build_receipt_prompt">#FFFF5D5D</color>
+
+    <!--费用明细-->
+    <color name="cost_color">#FF50C665</color>
+
+    <!--优惠劵-->
+    <color name="coupon_color">#FFFF3F3F</color>
+    <color name="coupon_remind">#FF727272</color>
+
+    <!--违章-->
+    <color name="illegal_unclean">#FF8D8D8D</color>
+    <color name="illegal_cleaned">#FFFF6A6A</color>
+    <color name="illegal_unclean_tip">#FFFF6C6C</color>
+    <color name="illegal_cleaned_tip">#FFBFBFBF</color>
+
+
+</resources>

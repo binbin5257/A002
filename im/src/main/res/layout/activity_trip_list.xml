@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud">
+
+    <include layout="@layout/topbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_104"
+            android:src="@drawable/bg_no_data"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_27"
+            android:text="@string/no_data_trip"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/coupon_remind"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_trip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"/>
+</LinearLayout>

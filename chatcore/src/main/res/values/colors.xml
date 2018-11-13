@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ########################################## 标注规范 start ######################################### -->
+    <!-- 蓝色 -->
+    <color name="important_color_blue">#10BFAF</color>
+    <color name="important_color_blue_press">#33B1A4</color>
+    <!-- 棕色 -->
+    <color name="important_color_brown">#1A3C58</color>
+    <!-- 背景色 浅灰色-->
+    <color name="normal_color_gray_background">#F5F5F5</color>
+    <!-- 灰色-->
+    <color name="normal_color_gray">#B8B8B8</color>
+
+    <!-- 字体颜色-->
+    <!-- 黑色-->
+    <color name="important_text_color_black">#333333</color>
+    <!-- 灰色-->
+    <color name="important_text_color_gray">#999999</color>
+    <!-- 浅灰色的线-->
+    <color name="normal_color_hint">#A2A1A1</color>
+    <!-- 浅灰色的线-->
+    <color name="normal_line_light_gray">#EFEFEF</color>
+    <!-- 深灰色-->
+    <color name="normal_color_dark_gray">#5D5D5D</color>
+    <!-- 黑色-->
+    <color name="normal_text_color_black">#030303</color>
+    <!-- 红色-->
+    <color name="normal_text_color_red">#FF5A5A</color>
+    <!-- 灰色-->
+    <color name="normal_text_color_grey">#787878</color>
+    <!-- 浅灰色-->
+    <color name="normal_text_color_light_grey">#9D9D9D</color>
+    <!-- 灰色-->
+    <color name="normal_text_color_gray">#A2A2A2</color>
+    <!-- 红色-->
+    <color name="normal_circle_color_red">#FBAC76</color>
+    <!-- 深灰色-->
+    <color name="normal_text_color_dark_gray">#4A4A4A</color>
+    <!-- 外勤到达的状态-->
+    <color name="normal_send_car_text_color">#D78A00</color>
+
+    <!--弹出框-->
+    <color name="submenu_identification">#FF10BFAF</color>
+    <color name="submenu_not_identification">#FFAEAEAE</color>
+    <color name="pop_window_color">#FF030303</color>
+
+    <!-- topbar -->
+    <color name="White">#FFFFFF</color>
+    <color name="title_color">#FF424242</color>
+    <color name="line">#ffbdbdbd</color>
+    <color name="topbar_bg">#202020</color>
+    <!-- Commons -->
+    <color name="blue_sky">#A0C8FF</color>
+    <color name="blue">#00CCFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="background_app">#dedede</color>
+    <color name="background_list_back">#e3e3e3</color>
+
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_new_tag">#ffffff</color>
+    <color name="grey">#ff58616d</color>
+    <color name="gray">#ffdddddd</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="textcolor64">#ff646464</color>
+    <color name="textcolor80">#ff808080</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="tc_title">#286a46</color>
+    <color name="tc_text">#1c1c1c</color>
+    <color name="activity_bg">#ebebeb</color>
+    <color name="activity_chat_bg">#f2f2f2</color>
+    <color name="line_bg">#aaaaaa</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dingxin_green_normal">#19b514</color>
+    <color name="dingxin_green_pressed">#06a304</color>
+    <color name="dingxin_red_normal">#ef4f4f</color>
+    <color name="dingxin_red_pressed">#d24646</color>
+    <color name="dingxin_red_disable">#f8f8f8</color>
+    <color name="dingxin_red_stroke">#c6c6c6</color>
+    <color name="dingxin_red_account_safe_pressed">#ffcccccc</color>
+    <color name="dingxin_red_account_safe_normal">#FFFFFFFF</color>
+    <color name="dingxin_brown_normal">#e9c500</color>
+    <color name="dingxin_brown_pressed">#c2a400</color>
+    <color name="dingxin_gray_normal">#dadada</color>
+    <color name="dingxin_gray_pressed">#cfcfcf</color>
+    <color name="dingxin_gray_cancel_color">#67A4AB</color>
+
+
+    <!--CostSheetActivity 费用明细-->
+    <color name="costsheetactivity_costsheet">#727272</color>
+    <!-- popwindowseleted -->
+    <color name="seletcedcommon_unseletced">#aaaaaa</color>
+    <color name="seletcedcommon_seletced">#353535</color>
+    <color name="event_textcolor576d95">#576d95</color>
+    <color name="event_textcolor353535">#353535</color>
+    <color name="event_textcolor999999">#999999</color>
+    <color name="green_dark">#5ea978</color>
+    <color name="backgroud">#ebebeb</color>
+    <color name="textcolor_orange">#F79726</color>
+    <color name="textcolor">#797979</color>
+    <color name="textgray">#ecf0f1</color>
+    <color name="dark_green">#0c9932</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="allWhite">#00ffffff</color>
+    <color name="titlecolor">#333333</color>
+    <color name="textcolor_blue">#33a6ff</color>
+    <!--车钥匙-->
+    <color name="key_no_car_text_color">#727272</color>
+    <!--locationmarker_color-->
+    <color name="locationmarker_color">#6fd127</color>
+
+    <!-- 导航标签按钮-->
+    <color name="default_color_black">#202020</color>
+    <!-- 正文标题文本-->
+    <color name="default_color_gray">#727272</color>
+    <!-- 提示文本分割线-->
+    <color name="default_color_light_gray">#aaaaaa</color>
+    <!-- 关键提示按钮文字（橙色）-->
+    <color name="default_color_orange">#f7931e</color>
+    <!-- 关键提示按钮文字（蓝色）-->
+    <color name="default_color_blue">#3cb4ff</color>
+
+
+    <color name="linecolor">#eaeaea</color>
+    <color name="businessoptunityd9d9d9">#d9d9d9</color>
+    <color name="eventselected45c01a">#45c01a</color>
+    <color name="event_textcolor636363">#636363</color>
+    <color name="main_tab_bg">#F7F7F8</color>
+    <color name="textcolor_green">#45C01A</color>
+
+    <!--确认订单-->
+    <color name="order_car_info_tiele_color">#414141</color>
+    <color name="order_car_info_text_color">#F79726</color>
+    <color name="order_car_info_title_color">#414141</color>
+    <color name="order_text_color">#727272</color>
+    <!--车况检查-->
+    <color name="inspect_select_false">#7b7b7b</color>
+    <color name="inspect_text_color">#474747</color>
+    <!-- 我 -->
+    <color name="memynametextcolor">#323232</color>
+    <color name="memynametextnextcolor">#ababab</color>
+    <!-- 个人信息 -->
+    <color name="persson_lin">#e8e8e8</color>
+    <!-- 认证 -->
+    <color name="identify_status_bar">#aaaaaa</color>
+    <color name="identify_status_bar_success">#fffbc5</color>
+    <color name="identify_status_bar_failure">#ef4f4f</color>
+    <!-- submenu -->
+    <color name="submenu_name">#202020</color>
+    <!-- map_infowindow -->
+    <color name="map_infowindow_green">#6fd127</color>
+    <!--支付-->
+    <color name="pay_address_text_color">#727272</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="black_5">#555555</color>
+    <color name="color_ffffff">#00000000</color>
+</resources>

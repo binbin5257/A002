@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/default_padding_left"
+        android:paddingRight="@dimen/default_padding_left">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/input_whichcity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#5C5C5C"
+                android:textSize="@dimen/txt_size_14" />
+            <ImageView
+                android:id="@+id/triangle_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_triangle_arrow"
+                android:layout_toRightOf="@+id/input_whichcity"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="@dimen/linesize"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_left_1_default"
+            android:background="#EBEBEB" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/input_searchbtn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/input_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请选择还车地点"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/important_text_color_black"
+                android:textColorHint="#BCBCBC"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageButton
+                android:id="@+id/location_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="5.0dip"
+                android:src="@drawable/location_search_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="#E5E5E5" />
+
+    <FrameLayout
+        android:id="@+id/loacitonmapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/setlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/locationview"
+                android:layout_marginBottom="21dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/location_setlocation"
+                android:checked="false"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/locationview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_bg_white"
+                android:padding="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_green"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"/>
+                    <TextView
+                        android:id="@+id/tv_poi_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/important_color_blue"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_alignLeft="@+id/administrative_position"
+                        android:layout_alignStart="@+id/administrative_position" />
+                    <!--行政位置-->
+                    <TextView
+                        android:id="@+id/administrative_position"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#A8A8A8"
+                        android:maxLines="2"
+                        android:layout_toRightOf="@id/iv_location"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/tv_poi_name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="end"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/tv_distace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#A8A8A8"
+                        android:text="werwer"
+                        android:layout_alignBaseline="@+id/administrative_position"
+                        android:layout_marginLeft="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/locatedactivity_confirm"
+                    style="@style/DefaultConfirmButton_Blue_Rectangle"
+                    android:layout_below="@+id/rl"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="在此接车" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

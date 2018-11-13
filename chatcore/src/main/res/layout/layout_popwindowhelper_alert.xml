@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/event_pading120"
+        android:layout_marginRight="@dimen/event_pading120"
+        android:background="@color/White"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/event_pading60"
+            android:paddingRight="@dimen/event_pading72"
+            android:paddingTop="@dimen/event_pading72">
+
+            <TextView
+                android:id="@+id/eventselected_poptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/event_textcolor353535"
+                android:textSize="@dimen/event_textsize54"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/event_pading48"
+                android:paddingTop="@dimen/event_pading48">
+
+
+                <TextView
+                    android:id="@+id/eventselected_popsend"
+                    android:layout_width="@dimen/event_height192"
+                    android:layout_height="@dimen/event_height96"
+                    android:background="@drawable/popwindowhelper_btnbg"
+                    android:gravity="center"
+                    android:text="@string/common_confirm"
+                    android:textColor="@color/event_textcolor576d95"
+                    android:textSize="@dimen/event_textsize48" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

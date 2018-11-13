@@ -1,0 +1,12 @@
+{
+  "data": {
+    "authenticated": true,
+    "authorities": null,
+    "nickname": "彭伟彬",
+    "nonceToken": "Njk2MDM5MTI5NjE0Njc2MTA0MzE=",
+    "principal": "C1N7HZUSFBPKP",
+    "reviewType": "APPROVED",
+    "username": "彭伟彬"
+  },
+  "status": "success"
+}

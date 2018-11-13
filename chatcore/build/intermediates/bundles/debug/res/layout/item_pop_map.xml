@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_pop_map_icon_iv"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/order_alipay"/>
+
+    <TextView
+        android:id="@+id/item_pop_map_select_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_confirm_bg_white"
+        android:padding="3dp"
+        android:text="打开"
+        android:textSize="13sp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/item_pop_map_text_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/item_pop_map_select_iv"
+        android:layout_toRightOf="@id/item_pop_map_icon_iv"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:text="ssssssssssssss"
+        android:textColor="#3cb4ff"
+        android:textSize="16dp"/>
+</RelativeLayout>

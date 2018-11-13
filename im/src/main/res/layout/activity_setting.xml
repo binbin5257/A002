@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="@color/line_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_top_tab"
+            android:orientation="vertical">
+
+            <!--意见反馈-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rlyt_setting_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/icon_me_detailed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_left"
+                    android:text="意见反馈"
+                    android:textColor="@color/message_name"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <!--常见问题-->
+            <RelativeLayout
+                android:id="@+id/rlyt_setting_usualproblem"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/icon_me_detailed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_left"
+                    android:text="常见问题"
+                    android:textColor="@color/message_name"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginLeft="10dp"
+                android:background="@color/line_bg" />
+
+            <!--用户条款-->
+            <RelativeLayout
+                android:id="@+id/rlyt_setting_rules"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_bg"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/icon_me_detailed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_left"
+                    android:text="用户条款"
+                    android:textColor="@color/message_name"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginLeft="10dp"
+                android:background="@color/line_bg" />
+            <!--关于-->
+            <RelativeLayout
+                android:id="@+id/rlyt_setting_about"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/icon_me_detailed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/default_padding_left"
+                    android:text="关于"
+                    android:textColor="@color/message_name"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

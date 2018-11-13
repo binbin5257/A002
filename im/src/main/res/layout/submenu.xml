@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/submenu_marginTop"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_submenu_personhead"
+                android:layout_width="@dimen/submenu_head_height"
+                android:layout_height="@dimen/submenu_head_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_headavatar" />
+
+            <ImageView
+                android:layout_width="@dimen/submenu_head_height"
+                android:layout_height="@dimen/submenu_head_height"
+                android:src="@drawable/submenu_iv_zhegai" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_left_1_default">
+
+            <TextView
+                android:id="@+id/txt_submenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_5" >
+
+                <ImageView
+                    android:id="@+id/iv_submenu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_submenu_name"
+                    android:layout_weight="0"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/submenu_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_size_5"
+                    android:textColor="@color/submenu_identification"
+                    android:text=""/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_submenu_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_wallet"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:layout_marginTop="@dimen/submenu_paddingTop"
+                    android:text="@string/btn_submenu_wallet"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+
+                <Button
+                    android:id="@+id/btn_submenu_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_event"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/btn_submenu_event"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+                <Button
+                    android:id="@+id/btn_submenu_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_trip"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/bottom_rbtn_third"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_submenu_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_chat_selector_background"
+                        android:drawableLeft="@drawable/btn_submenu_message_image"
+                        android:drawablePadding="@dimen/submenu_text_image"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/submenu_padding"
+                        android:paddingTop="@dimen/submenu_padding"
+                        android:text="@string/bottom_rbtn_third"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="@dimen/txt_size_15" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/btn_submenu_message_hintllyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/submenu_padingbottom"
+                            android:paddingTop="@dimen/submenu_padingtop"
+                            android:src="@drawable/btn_submenu_message_image"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/submenu_padingbottom"
+                            android:paddingTop="@dimen/submenu_padingtop"
+                            android:src="@drawable/btn_submenu_message_hint" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_submenu_customerservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_service"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/btn_submenu_customerservice"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+
+                <Button
+                    android:id="@+id/btn_submenu_illegal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_illegal"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/btn_submenu_illegal"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+
+                <Button
+                    android:id="@+id/btn_submenu_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/bg_submenu_setting"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/btn_submenu_setting"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15"
+                    android:paddingLeft="@dimen/submenu_margin"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_submenu_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawableLeft="@drawable/btn_submenu_zuzhi_image"
+                    android:drawablePadding="@dimen/submenu_text_image"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/submenu_padding"
+                    android:paddingTop="@dimen/submenu_padding"
+                    android:text="@string/btn_submenu_organization"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_15" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

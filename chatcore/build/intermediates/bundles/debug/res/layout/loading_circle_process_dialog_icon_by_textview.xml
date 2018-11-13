@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_loading_process_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_pro_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dip">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true">
+
+        <cn.lds.chatcore.view.widget.SectorProgressView.ColorfulRingProgressView
+            android:id="@+id/crpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bgColor="#b1b1b1"
+            app:fgColorEnd="@color/green_dark"
+            app:fgColorStart="@color/green_dark"
+            app:percent="0"
+            app:startAngle="0"
+            app:strokeWidths="1dp" />
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tip_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp" />
+</LinearLayout>

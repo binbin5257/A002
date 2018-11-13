@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.lds.im.view.CostSheetActivity">
+
+    <include layout="@layout/topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/route_height130"
+        android:layout_gravity="center_vertical"
+        android:gravity="right|center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costsheetactivity_jifeishuoming"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_paymentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading58"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costsheetactivity_totalmileage"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_odometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costsheetactivity_totaltime"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_payformileage"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_distancecost"
+            android:text="￥"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_distancecost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_payfortime"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_timecost"
+            android:text="￥"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_timecost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_yajin"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_yajin"
+            android:text="￥"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_yajin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:layout_marginLeft="@dimen/margin_left_1_default"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_yingfu"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_amountPayable"
+            android:text="￥"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_amountPayable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_yuezhifu"
+            android:textColor="@color/costsheetactivity_costsheet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_amountaccount"
+            android:text="￥"
+            android:textColor="@color/textcolor_orange"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:id="@+id/costsheetactivity_amountaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/textcolor_orange" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:layout_marginLeft="@dimen/margin_left_1_default"
+        android:layout_marginTop="@dimen/paymentdetail_pading35"
+        android:background="@color/line_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paymentdetail_pading60"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_left_1_default"
+        android:paddingRight="@dimen/margin_left_1_default">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_shifu"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/costsheetactivity_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/costsheetactivity_amount"
+            android:text="￥"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/costsheetactivity_zhifubao"
+            android:textColor="@color/costsheetactivity_costsheet"
+            android:textSize="@dimen/text_size_58"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:layout_marginTop="@dimen/paymentdetail_pading60"
+        android:background="@color/line_bg" />
+</LinearLayout>

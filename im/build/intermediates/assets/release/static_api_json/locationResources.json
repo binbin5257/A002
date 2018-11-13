@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "longitude": 116.331398,
+      "latitude": 39.897445,
+      "name": "上地停车场",
+      "address": "北京市海淀区上地10街",
+      "vehicleCount": 5,
+      "parkingLotCount": 10,
+      "chargeSpotsCount": 0
+    },
+    {
+      "id": 2,
+      "longitude": 116.404323,
+      "latitude": 39.912731,
+      "name": "天安门停车场",
+      "address": "长安街天安门广场1号",
+      "vehicleCount": 1,
+      "parkingLotCount": 100,
+      "chargeSpotsCount": 0
+    },
+    {
+      "id": 3,
+      "longitude": 116.312912,
+      "latitude": 39.981819,
+      "name": "皇冠假日停车场",
+      "address": "中关村",
+      "vehicleCount": 0,
+      "parkingLotCount": 10,
+      "chargeSpotsCount": 0
+    }
+  ]
+}

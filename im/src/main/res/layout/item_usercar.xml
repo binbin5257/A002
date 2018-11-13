@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/important_color_brown">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_below="@+id/item_usercar_seriesName">
+            <include
+                android:id="@+id/common_car_info"
+                layout="@layout/common_car_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <cn.lds.im.view.widget.MarqueeTextView
+                android:id="@+id/item_usercar_minprice"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/common_car_info"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="marquee"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="asfdsdfffffffffffffff"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_13" />
+            <LinearLayout
+                android:id="@+id/item_usercar_chargingrule"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/item_usercar_minprice"
+                android:layout_alignBottom="@id/item_usercar_minprice"
+                android:paddingLeft="5dp"
+                android:gravity="bottom">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_minprice" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/item_usercar_seriesName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:lines="1"
+            android:text="sdfadsfas"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_15" />
+        <TextView
+            android:id="@+id/item_usercar_platelicenseno"
+            android:layout_width="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="京K26545"
+            android:layout_below="@+id/item_usercar_seriesName"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/item_usercar_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_15" />
+
+    </RelativeLayout>
+</LinearLayout>

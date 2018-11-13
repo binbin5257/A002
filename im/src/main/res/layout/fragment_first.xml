@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <FrameLayout
+        android:id="@+id/loacitonmapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+           >
+            <ImageView
+                android:id="@+id/cusc_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/bg_cusc_logo"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/one_key_search_car_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/bg_one_key_search_car"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/first_refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/setlocation"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/location_refresh"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/setlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/map_bottom_layout"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/location_setlocation"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/map_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_left_1_default"
+                android:background="@drawable/circle_bg_white"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_left_1_default"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/appoint_layout"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:background="@drawable/bg_brown"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/map_hlist_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="@dimen/map_bottomlayout_adpter_margintop" />
+
+                        <ImageView
+                            android:id="@+id/map_hlist_left"
+                            android:layout_width="@dimen/map_bottomlayout_map_back"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:scaleType="center"
+                            android:src="@drawable/map_hlist_back" />
+
+                        <ImageView
+                            android:id="@+id/map_hlist_right"
+                            android:layout_width="@dimen/map_bottomlayout_map_back"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="0"
+                            android:scaleType="center"
+                            android:src="@drawable/map_hlist_next" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_curve" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/icon_order_location" />
+
+
+                        <TextView
+                            android:id="@+id/location_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/important_text_color_black"
+                            android:textSize="@dimen/txt_size_15" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/location_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/important_text_color_gray"
+                        android:textSize="@dimen/txt_size_13" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/appoint_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_above="@+id/tv_setting_exit"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_split_line_height"
+                        android:background="@color/normal_line_light_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/choicebooktime_taketimerllt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="35dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_bg_blue" />
+
+                            <TextView
+                                android:id="@+id/choicebooktime_taketime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/choicebooktime_taketime"
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_14" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="@dimen/default_split_line_height"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@color/normal_line_light_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/choicebooktime_returntimerllt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="32dp"
+                            android:layout_toRightOf="@+id/line"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/circle_bg_red" />
+
+                            <TextView
+                                android:id="@+id/choicebooktime_returntime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/choicebooktime_returntime"
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_14" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_split_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/normal_line_light_gray" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_setting_exit"
+                    style="@style/DefaultConfirmButton_Blue_Rectangle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/map_bottomlayout_confirm_margin"
+                    android:layout_marginRight="@dimen/map_bottomlayout_confirm_margin"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/bookcar_confirm" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <include
+            layout="@layout/layout_driver_over"/>
+    </FrameLayout>
+</RelativeLayout>

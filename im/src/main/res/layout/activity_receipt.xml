@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/backgroud"
+    tools:context="cn.lds.im.view.ReceiptActivity">
+
+    <include layout="@layout/topbar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_20"
+            android:text="@string/receipt_amount"
+            android:textColor="@color/message_name"
+            android:textSize="@dimen/txt_size_14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wallet_figure_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/submenu_identification"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/receiptactivity_confirm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_item_height"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="@dimen/margin_size_16"
+            android:layout_marginRight="@dimen/margin_size_16"
+            android:background="@drawable/btn_confirm_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/receiptactivity_kaifapiao"
+            android:textColor="@color/White"
+            android:textSize="@dimen/order_confirm_size" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_default"
+        android:layout_marginTop="9dp"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_size_16"
+        android:paddingBottom="@dimen/submenu_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/receiptactivity_kaipiaoshuoming"
+            android:textColor="@color/receipt_color"
+            android:textSize="@dimen/txt_size_16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/receiptactivity_kaipiaoshuoming1"
+            android:textColor="@color/receipt_instructions_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receiptactivity_kaipiaoshuoming2"
+            android:textColor="@color/receipt_instructions_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receiptactivity_kaipiaoshuoming3"
+            android:textColor="@color/receipt_instructions_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receiptactivity_kaipiaoshuoming4"
+            android:textColor="@color/receipt_instructions_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+</LinearLayout>

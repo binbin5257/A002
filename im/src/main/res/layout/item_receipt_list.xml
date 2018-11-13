@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/car_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="axss"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:layout_marginTop="@dimen/margin_size_10"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/txt_size_16"/>
+                <TextView
+                    android:id="@+id/trip_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:drawableRight="@drawable/icon_me_detailed"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:textSize="@dimen/txt_size_14"
+                    android:textColor="@color/submenu_identification"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/margin_size_10"/>
+                <TextView
+                    android:id="@+id/trip_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发票抬头："
+                    android:textSize="@dimen/txt_size_13"
+                    android:textColor="@color/identifying_color"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:layout_marginBottom="@dimen/margin_size_10"
+                    android:layout_marginTop="@dimen/margin_size_5"
+                    android:layout_below="@id/car_model"/>
+
+                <TextView
+                    android:id="@+id/receipt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toRightOf="@+id/trip_time"
+                    android:textSize="@dimen/txt_size_13"
+                    android:textColor="@color/identifying_color"
+                    android:layout_marginTop="@dimen/margin_size_5"
+                    android:layout_marginLeft="@dimen/margin_size_5"
+                    android:layout_marginBottom="@dimen/margin_size_10"
+                    android:layout_below="@id/car_model"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

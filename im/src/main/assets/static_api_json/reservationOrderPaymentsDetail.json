@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "data": {
+    "amountPayable": 100,
+    // 应付金额
+    "amountPaid": 12.12,
+    // 实付金额
+    "odometer": 32111,
+    // 总里程
+    "time": 2505622,
+    // 时长(秒)
+    "paymentDescription": "￥0.60/分钟"
+  }
+}

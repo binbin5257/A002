@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp" />
+
+    <LinearLayout
+        android:id="@+id/map_resultlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RadioGroup
+            android:id="@+id/map_routeplan_rb"
+            android:layout_width="fill_parent"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/route_linebus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selsct_routebus"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/route_linecar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/selsct_routecar"
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/route_linewalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selsct_routewalk"
+                android:button="@null"
+                android:gravity="center" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:id="@+id/route_inputdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_map_result_from"
+                        android:textColor="@color/textcolor80"
+                        android:textSize="@dimen/textsize" />
+
+                    <TextView
+                        android:id="@+id/start"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:text="@string/activity_map_result_my_location"
+                        android:textColor="@color/dark_green"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="42dp"
+                    android:background="#eaeaea" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_map_result_to"
+                        android:textColor="@color/textcolor80"
+                        android:textSize="@dimen/textsize" />
+
+                    <EditText
+                        android:id="@+id/map_result_rouplan_end"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:hint="@string/activity_map_result_write_end"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_resultlayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/map_resultsearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/map_serachbg"
+                android:gravity="center_vertical"
+                android:hint="@string/contact_list_search_hint"
+                android:paddingRight="36.0dip"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize" />
+
+            <ImageButton
+                android:id="@+id/map_resultdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/btn_search_close"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/map_resultsearch_confirm"-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="6dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:layout_weight="0"-->
+            <!--android:background="@drawable/map_btnsearch"-->
+            <!--android:text="@string/common_search"-->
+            <!--android:textColor="@color/White"-->
+            <!--android:textSize="@dimen/textsize"-->
+            <!--android:visibility="gone" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_result_backlocated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/map_position"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/activity_map_result_my_location"
+            android:textColor="@color/textcolor80"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/map_resultlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone"></ListView>
+
+</LinearLayout>

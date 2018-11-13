@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "data": {
+    "id": 5,
+    "status": "REQUESTED",
+    "invoiceNo": "Invoice1N7HNJXULH3P",
+    "amount": 300,
+    "title": "abc",
+    "recipient": "张三",
+    "recipientTelephone": "130123123123",
+    "address": "大连",
+    "zipCode": "116000",
+    "invoiceType": "INDIVIDUAL",
+    "payments": null,
+    "officialNo": null,
+    "expressNo": null,
+    "expressCode": null,
+    "enrolleeId": 1,
+    "enrolleeName": "吴巴哥"
+  }
+}

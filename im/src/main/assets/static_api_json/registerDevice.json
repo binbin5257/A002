@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "data": {
+    "id": null,
+    "token": "05aa926e-b3fd-4848-857a-e071bbbf4301",
+    "clientId": "C1N7HX0MSLMDL",
+    "deviceId": "869336023489436",
+    "deviceType": 1,
+    "osType": 2,
+    "host": "211.99.254.196",
+    "socketPort": 12412,
+    "websocketPort": 1884,
+    "httpPort": 212
+  }
+}

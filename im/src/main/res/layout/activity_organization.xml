@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color_light_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar"/>
+
+    <TextView
+        android:id="@+id/organization_now_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/default_padding_left"
+        android:gravity="center_vertical"
+        android:text="当前所在组织"
+        android:textColor="@color/default_color_black"
+        android:textSize="@dimen/default_text_size_title_body">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_split_line_height"
+        android:background="@color/default_color_light_gray"/>
+
+    <ListView
+        android:id="@+id/organization_lv"
+        style="@style/CurrencyListView"
+        android:background="@color/default_color_light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

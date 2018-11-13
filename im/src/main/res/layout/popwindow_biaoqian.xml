@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/common_bg_style"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/title_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:text="@string/popwindow_biaoqian_shanchu"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/pop_del_tag"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pop_biaoqian_btn_style"
+            android:gravity="center"
+            android:text="@string/common_delete"
+            android:textColor="#1a4366"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pop_cancel"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/pop_del_tag"
+            android:background="@drawable/pop_biaoqian_btn_style"
+            android:gravity="center"
+            android:text="@string/common_cancel"
+            android:textColor="#1a4366"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

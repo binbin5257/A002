@@ -1,0 +1,31 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "no": "AC1N7HQCVFVWP3",  //活动编号
+      "title": "huodong1",     //活动标题
+      "thumbnail": "5a7d0b99-e812-4dca-ae4a-bf3ce9b7b74b",    //活动图标编号（下载用）
+      "executionStartTime": 1467734400000,    //活动开始时间
+      "executionEndTime": 1471536000000    //活动结束时间
+    },{
+      "id": 1,
+      "no": "AC1N7HQCVFVWP3",  //活动编号
+      "title": "huodong2",     //活动标题
+      "thumbnail": "5a7d0b99-e812-4dca-ae4a-bf3ce9b7b74b",    //活动图标编号（下载用）
+      "executionStartTime": 1467734400000,    //活动开始时间
+      "executionEndTime": 1471536000000    //活动结束时间
+    }
+  ],
+  "pageable": {
+    "totalElements": 1,
+    "numberOfElements": 1,
+    "totalPages": 1,
+    "first": true,
+    "last": true,
+    "size": 20,
+    "number": 0,
+    "fromNumber": 1,
+    "toNumber": 1
+  }
+}

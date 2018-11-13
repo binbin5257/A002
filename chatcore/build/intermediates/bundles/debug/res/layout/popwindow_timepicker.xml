@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pop_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_tab_no"
+            android:background="@color/line_bg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/time_picker_cancel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_1_default"
+                android:text="@string/common_cancel"
+                android:textColor="#9d9d9d"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/time_picker_confirm_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_left_1_default"
+                android:text="@string/common_confirm"
+                android:textColor="#22aaff"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_tab_no"
+            android:background="@color/line_bg"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="204dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="204dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <cn.lds.chatcore.view.widget.timepicker.WheelView
+                    android:id="@+id/year"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <cn.lds.chatcore.view.widget.timepicker.WheelView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <cn.lds.chatcore.view.widget.timepicker.WheelView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/time_picker_week_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp"/>
+
+                <cn.lds.chatcore.view.widget.timepicker.WheelView
+                    android:id="@+id/h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"/>
+
+                <cn.lds.chatcore.view.widget.timepicker.WheelView
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_top_tab_no"
+                    android:layout_alignParentTop="true"
+                    android:background="#e5e5e5"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_top_tab_no"
+                    android:layout_alignParentBottom="true"
+                    android:background="#e5e5e5"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

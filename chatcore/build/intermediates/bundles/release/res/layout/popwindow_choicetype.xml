@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_big_half"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/pop_choicetype_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawablePadding="@dimen/choicetype_layout_drwablepading40"
+                    android:drawableTop="@drawable/bg_immediately"
+                    android:gravity="center"
+                    android:text="公务用车" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/height_top_lin_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:id="@+id/pop_choicetype_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawablePadding="@dimen/choicetype_layout_drwablepading40"
+                    android:drawableTop="@drawable/bg_order"
+                    android:gravity="center"
+                    android:text="私人用车" />
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/height_top_lin_height"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_bg" />
+
+            <LinearLayout
+                android:id="@+id/pop_choicetype_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_chat_selector_background"
+                    android:drawablePadding="@dimen/choicetype_layout_drwablepading40"
+                    android:drawableTop="@drawable/top_charging_pie"
+                    android:gravity="center"
+                    android:text="充电站" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_take_up"/>
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/pop_black_bg"></LinearLayout>-->
+
+</LinearLayout>

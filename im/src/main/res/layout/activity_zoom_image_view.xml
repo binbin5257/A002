@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 引用自定义控件 -->
+    <cn.lds.chatcore.view.widget.PhotoView.PhotoView
+        android:id="@+id/iv_zoom_image_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </cn.lds.chatcore.view.widget.PhotoView.PhotoView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "picUrl": "http://statice.com/1",
+      "modelName": "宝马X1",
+      "plateLicenseNo": "京A12345",
+      "sustainedMileage": 29,
+      "billDescription": "0.6元/分钟"
+    },
+    {
+      "id": 2,
+      "picUrl": "http://statice.com/1",
+      "modelName": "奔驰S级",
+      "plateLicenseNo": "京A88888",
+      "sustainedMileage": 99,
+      "billDescription": "10元/分钟"
+    },
+    {
+      "id": 3,
+      "picUrl": "http://statice.com/1",
+      "modelName": "Smart",
+      "plateLicenseNo": "京P77556",
+      "sustainedMileage": 29,
+      "billDescription": "5元/分钟"
+    },
+    {
+      "id": 4,
+      "picUrl": "http://statice.com/1",
+      "modelName": "奔驰S级",
+      "plateLicenseNo": "京k22335",
+      "sustainedMileage": 39,
+      "billDescription": "10元/分钟"
+    }
+  ]
+}

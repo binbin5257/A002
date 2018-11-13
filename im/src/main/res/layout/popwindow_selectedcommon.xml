@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_pading1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/businessoptunityd9d9d9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_height144"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/popwindow_selectedcommon_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/event_pading48"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/dingxin_gray_cancel_color"
+            android:text="@string/common_cancel"
+            android:background="@drawable/btn_bg_gray" />
+
+        <Button
+            android:id="@+id/popwindow_selectedcommon_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/event_pading48"
+            android:background="@drawable/btn_bg_darkgreen"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/common_confirm"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_pading1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/businessoptunityd9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/popwindow_selectedcommon_sexlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:textAlignment="center"
+            android:visibility="gone"></ListView>
+
+        <ListView
+            android:id="@+id/popwindow_selectedcommon_djqlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:textAlignment="center"
+            android:visibility="gone"></ListView>
+
+        <ListView
+            android:id="@+id/popwindow_selectedcommon_provincelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/event_pading48"
+            android:paddingRight="@dimen/event_pading48"
+            android:scrollbars="none"
+            android:textAlignment="center"
+            android:visibility="gone"></ListView>
+
+        <ListView
+            android:id="@+id/popwindow_selectedcommon_citylistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/event_pading48"
+            android:paddingRight="@dimen/event_pading48"
+            android:scrollbars="none"
+            android:textAlignment="center"
+            android:visibility="gone"></ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

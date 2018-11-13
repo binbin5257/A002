@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/event_pading120"
+        android:layout_marginRight="@dimen/event_pading120"
+        android:background="@color/White"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/event_pading60"
+            android:paddingRight="@dimen/event_pading72">
+
+            <TextView
+                android:id="@+id/eventselected_poptitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/event_height144"
+                android:gravity="center"
+                android:text="T-时代发布会"
+                android:textColor="@color/event_textcolor353535"
+                android:textSize="@dimen/event_textsize48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/eventselected_popiv"
+                    android:layout_width="91dp"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slidemenu_avtar" />
+
+                <TextView
+                    android:id="@+id/eventselected_popcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="10dp"
+                    android:maxLines="3"
+                    android:paddingLeft="@dimen/event_pading36"
+                    android:text="长得真帅，口水已流一地，请求靠谱不在修改UI，谢谢，恭祝工作顺利，身体健康，我是你们的安卓开发"
+                    android:textColor="@color/event_textcolor999999"
+                    android:textSize="@dimen/event_textsize42" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/event_pading48"
+                android:paddingTop="@dimen/event_pading48">
+
+                <TextView
+                    android:id="@+id/pop_cancel"
+                    android:layout_width="@dimen/event_height192"
+                    android:layout_height="@dimen/event_height96"
+                    android:background="@color/White"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/event_textcolor576d95"
+                    android:textSize="@dimen/event_textsize48" />
+
+                <TextView
+                    android:id="@+id/eventselected_popsend"
+                    android:layout_width="@dimen/event_height192"
+                    android:layout_height="@dimen/event_height96"
+                    android:background="@color/White"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@color/event_textcolor576d95"
+                    android:textSize="@dimen/event_textsize48" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pop_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pop_black_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <cn.lds.chatcore.view.widget.ListView.MyListView
+            android:id="@+id/pop_menu_lists_lv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/margin_left_2_default"
+            android:layout_marginLeft="@dimen/margin_left_1_default"
+            android:layout_marginRight="@dimen/margin_left_1_default"
+            android:background="@drawable/pop_menu_bg"
+            android:divider="@color/line_bg"
+            android:dividerHeight="@dimen/height_top_lin_height"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/background_list_back"
+            android:scrollbars="none"></cn.lds.chatcore.view.widget.ListView.MyListView>
+
+        <TextView
+            android:id="@+id/pop_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/margin_left_1_default"
+            android:layout_marginRight="@dimen/margin_left_1_default"
+            android:background="@drawable/pop_menu_bg"
+            android:gravity="center"
+            android:text="@string/common_cancel"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

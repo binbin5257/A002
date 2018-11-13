@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="application_name">"钛马"</string>
+  <string name="application_version">"0.1c-104"</string>
+  <string name="application_package">cn.lds.chat</string>
+  <string name="client_name">EUCP-IM</string>
+</resources>

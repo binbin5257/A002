@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/topbar"/>
+
+        <FrameLayout
+            android:id="@+id/frame_m"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0">
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/linesize"
+            android:background="@color/line_bg"/>
+
+
+        <RadioGroup
+            android:id="@+id/main_tab_RadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/radio_btn_margin">
+
+            <RadioButton
+                android:id="@+id/radio_main"
+                style="@style/main_tab"
+                android:checked="true"
+                android:drawableTop="@drawable/iconmenu_usecar"
+                android:paddingLeft="@dimen/radio_btn_pading"
+                android:text="@string/bottom_rbtn_first"
+                android:textSize="9sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_second"
+                style="@style/main_tab"
+                android:drawableTop="@drawable/iconmenu_key"
+                android:paddingLeft="0dp"
+                android:text="@string/bottom_rbtn_second"
+                android:textSize="9sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_third"
+                style="@style/main_tab"
+                android:drawableTop="@drawable/iconmenu_xingcheng"
+                android:paddingLeft="0dp"
+                android:paddingRight="@dimen/radio_btn_pading"
+                android:text="@string/bottom_rbtn_third"
+                android:textSize="9sp"/>
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/ll_popwindow"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:background="@color/line_bg"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/main_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55666666"
+        android:visibility="gone"/>
+</RelativeLayout>

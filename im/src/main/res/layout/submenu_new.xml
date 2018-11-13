@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_submenu_personhead"
+                android:layout_width="@dimen/submenu_head_height"
+                android:layout_height="@dimen/submenu_head_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_headavatar" />
+
+            <ImageView
+                android:layout_width="@dimen/submenu_head_height"
+                android:layout_height="@dimen/submenu_head_height"
+                android:src="@drawable/submenu_iv_zhegai" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_submenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_submenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_submenu_name"
+                android:layout_below="@+id/txt_submenu_name"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_size_5"
+                android:id="@+id/submenu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_submenu_name"
+                android:layout_alignLeft="@+id/txt_submenu_name"
+                android:textColor="@color/submenu_identification" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_uncommitted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/uncommitted_submenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/txt_size_14" />
+
+            <ImageView
+                android:id="@+id/iv_uncommitted_submenu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/uncommitted_submenu_tv"
+                android:layout_below="@+id/uncommitted_submenu_name"
+                android:layout_marginRight="5dp"
+                android:scaleType="center"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_size_5"
+                android:id="@+id/uncommitted_submenu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/uncommitted_submenu_name"
+                android:textColor="@color/submenu_identification" />
+
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:layout_marginTop="16dp"
+            android:dividerHeight="0dp"/>
+    </LinearLayout>
+</RelativeLayout>

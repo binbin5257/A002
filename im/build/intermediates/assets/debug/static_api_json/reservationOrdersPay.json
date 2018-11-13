@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "data": {
+    "id": null,
+    "mchId": "1279001001",
+    "sign": "1BC3108623CFC719D35F7D80F1A6854E",
+    "nonceStr": "FdHfK5egvpNcLvYm",
+    "prePayId": "wx20160622211931121996975d0698664377"
+  }
+}

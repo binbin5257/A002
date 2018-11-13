@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/backgroud"
+              tools:context="cn.lds.im.view.EventActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:id="@+id/eventactivity_nullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_104"
+            android:src="@drawable/bg_no_data"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_27"
+            android:text="@string/no_data_event"
+            android:textColor="@color/coupon_remind"
+            android:textSize="@dimen/default_text_size_title_body"/>
+    </LinearLayout>
+
+    <cn.lds.im.view.widget.pullToRefreshView.PullToRefreshListView
+        android:id="@+id/eventactivity_pulllistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/margin_size_12"
+        android:scrollbars="none"/>
+</LinearLayout>

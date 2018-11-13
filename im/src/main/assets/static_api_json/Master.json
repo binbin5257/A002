@@ -1,0 +1,51 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "categoryKey": "Sexuality",
+      "dictionarys": [
+        {
+          "key": "MALE",
+          "value": "MALE",
+          "text": "男",
+          "parentKey": null,
+          "order": 1,
+          "description": "",
+          "children": []
+        },
+        {
+          "key": "FEMALE",
+          "value": "FEMALE",
+          "text": "女",
+          "parentKey": null,
+          "order": 1,
+          "description": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "categoryKey": "OrderStatus",
+      "dictionarys": [
+        {
+          "key": "PAID",
+          "value": "PAID",
+          "text": "已完成",
+          "parentKey": null,
+          "order": 1,
+          "description": "",
+          "children": []
+        },
+        {
+          "key": "CANCELLED",
+          "value": "CANCELLED",
+          "text": "已取消",
+          "parentKey": null,
+          "order": 1,
+          "description": "",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

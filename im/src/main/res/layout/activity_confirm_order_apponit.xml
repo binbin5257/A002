@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dash="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar" />
+
+    <cn.lds.im.view.widget.pullToRefreshView.PullToRefreshScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_left_2_default"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <include layout="@layout/activity_confirm_order_car_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_curve" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prompt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:animateLayoutChanges="true">
+
+
+                <RelativeLayout
+                    android:id="@+id/prompt_take_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/prompt_take_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/take_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_order_location"
+                            android:visibility="visible"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="16dp"
+                            />
+                        <RelativeLayout
+                            android:id="@+id/take_loc_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_toRightOf="@id/take_iv"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:id="@+id/take_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="取车场站："
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_12"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="2dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/take_txt"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="8dp">
+
+                                <TextView
+                                    android:id="@+id/prompt_take_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/important_text_color_black"
+                                    android:textSize="@dimen/txt_size_14" />
+
+                                <TextView
+                                    android:id="@+id/prompt_take_address"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="2"
+                                    android:layout_marginTop="4dp"
+                                    android:ellipsize="end"
+                                    android:textSize="@dimen/txt_size_12" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/apponit_take_time_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/take_loc_layout"
+                            android:layout_toRightOf="@id/take_iv"
+                            android:layout_marginLeft="8dp"
+                            android:paddingBottom="10dp">
+
+
+                            <TextView
+                                android:id="@+id/apponit_take_time_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="取车时间："
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_12" />
+
+                            <TextView
+                                android:id="@+id/apponit_take_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_alignTop="@+id/apponit_take_time_tv"
+                                android:layout_toRightOf="@+id/apponit_take_time_tv"
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_12" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_split_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/normal_line_light_gray"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/prompt_return_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp">
+                    <RelativeLayout
+                        android:id="@+id/prompt_return_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:id="@+id/return_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_order_location"
+                            android:visibility="visible"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="16dp"/>
+                        <RelativeLayout
+                            android:id="@+id/return_loc_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/return_iv"
+                            android:layout_marginLeft="@dimen/margin_size_8"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:id="@+id/return_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="还车场站："
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_12"
+                                android:layout_marginTop="2dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/prompt_return_location"
+                                android:layout_toRightOf="@+id/return_txt"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="8dp">
+
+                                <TextView
+                                    android:id="@+id/prompt_return_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/important_text_color_black"
+                                    android:textSize="@dimen/txt_size_14" />
+
+                                <TextView
+                                    android:id="@+id/prompt_return_address"
+                                    android:layout_width="180dp"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="2"
+                                    android:layout_marginTop="4dp"
+                                    android:ellipsize="end"
+                                    android:textSize="@dimen/txt_size_12" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/prompt_return_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/icon_return_edit" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/apponit_return_time_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/return_iv"
+                            android:layout_below="@+id/return_loc_layout"
+                            android:layout_marginLeft="@dimen/margin_size_8"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/apponit_return_time_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="还车时间："
+                                android:textColor="@color/important_text_color_black"
+                                android:textSize="@dimen/txt_size_12" />
+
+                            <TextView
+                                android:id="@+id/apponit_return_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:layout_toRightOf="@+id/apponit_return_time_tv"
+                                android:textSize="@dimen/txt_size_12"
+                                android:layout_marginLeft="8dp"/>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linesize"
+                android:background="#E1E1E1" />
+
+
+            <RelativeLayout
+                android:id="@+id/send_car_rl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:background="#E1E1E1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="送车上门"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_send_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/checkbox_style"
+                    android:button="@null"
+                    android:checked="false" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:layout_alignParentBottom="true"
+                    android:background="#E1E1E1" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/send_car_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/send_car_take_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="选择取车地点"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <TextView
+                        android:id="@+id/send_car_location_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_toRightOf="@+id/textview1"
+                        android:gravity="right"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_arrow_right" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E1E1E1" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/send_car_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="取车时间"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <TextView
+                        android:id="@+id/send_car_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="28dp"
+                        android:layout_toRightOf="@+id/textview2"
+                        android:gravity="right"
+                        android:hint="请选择取车时间"
+                        android:textColorHint="@color/normal_color_hint"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_arrow_right" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E1E1E1" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="联系方式"
+                        android:textSize="@dimen/txt_size_14" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ic_arrow_right"
+                        android:visibility="gone"/>
+
+
+                   <!-- <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="28dp"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:hint="输入常用手机号"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/important_text_color_black"
+                        android:textColorHint="@color/normal_color_hint"
+                        android:textSize="@dimen/txt_size_14" />-->
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColorHint="@color/normal_color_hint"
+                        android:hint="输入常用手机号"
+                        android:gravity="center_vertical|right"
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_alignParentBottom="true"
+                        android:background="#E1E1E1" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_send_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/send_car_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="23dp"
+                        android:textColor="#727272"
+                        android:textSize="@dimen/txt_size_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/take_car_customer_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/customer_service"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/icon_custmer_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="联系客服"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_order_protocol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_prompt_last"
+                    android:textColor="@color/order_text_color"
+                    android:textSize="@dimen/order_prompt_text_size" />
+
+                <TextView
+                    android:id="@+id/order_protocol_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_prompt_protocol"
+                    android:textColor="@color/important_color_blue"
+                    android:textSize="@dimen/order_prompt_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_confirm_tv"
+                style="@style/DefaultConfirmButton_Blue_Rectangle"
+                android:layout_marginLeft="@dimen/margin_left_1_default"
+                android:layout_marginRight="@dimen/margin_left_1_default"
+                android:layout_marginTop="32dp"
+                android:text="@string/order_confirm" />
+
+        </LinearLayout>
+    </cn.lds.im.view.widget.pullToRefreshView.PullToRefreshScrollView>
+</LinearLayout>

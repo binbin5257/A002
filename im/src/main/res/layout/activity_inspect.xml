@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linesize"
+        android:background="#E1E1E1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_1_default"
+                    android:text="@string/inspect_title_1"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <RadioGroup
+                    android:id="@+id/inspect_exterior_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inspect_radiogroup_left"
+                    android:layout_marginTop="@dimen/inspect_radio_top"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/inspect_exterior_yes_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_yes"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/inspect_exterior_no_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:layout_marginLeft="@dimen/inspect_radiobtn_left"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_no"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_1_default"
+                    android:text="@string/inspect_title_2"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_14" />
+
+
+                <RadioGroup
+                    android:id="@+id/inspect_inside_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/inspect_radiogroup_left"
+                    android:layout_marginTop="@dimen/inspect_radio_top"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/inspect_inside_clean_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_yes"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/inspect_inside_garbage_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/inspect_rb_varia"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/inspect_inside_dirty_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:layout_marginLeft="@dimen/inspect_radiobtn_left"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_no"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_1_default"
+                    android:text="@string/inspect_title_3"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_14" />
+
+
+                <RadioGroup
+                    android:id="@+id/inspect_tyre_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginLeft="@dimen/inspect_radiogroup_left"
+                    android:layout_marginTop="@dimen/inspect_radio_top"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/inspect_tyre_yes_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_yes"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/inspect_tyre_no_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:layout_marginLeft="@dimen/inspect_radiobtn_left"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_no"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_marginTop="@dimen/margin_left_1_default"
+                    android:text="@string/inspect_title_4"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/inspect_text_size"
+                    android:visibility="gone" />
+
+
+                <RadioGroup
+                    android:id="@+id/inspect_process_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_marginTop="@dimen/margin_left_1_default"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/inspect_process_yes_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_yes"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/inspect_process_no_rb"
+                        android:layout_width="@dimen/inspect_rb_width"
+                        android:layout_height="@dimen/inspect_rb_height"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:background="@drawable/radio_inspect"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/select_no"
+                        android:textColor="@drawable/radio_inspect_text"
+                        android:textSize="@dimen/inspect_text_size" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white">
+
+                <GridView
+                    android:id="@+id/inspect_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:listSelector="#00000000"
+                    android:numColumns="@integer/inspect_photo_number"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp" />
+
+                <TextView
+                    android:id="@+id/tv_pic_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="16dp"
+                    android:text="(0/6)"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/txt_size_12" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp">
+
+                <EditText
+                    android:id="@+id/et_add_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="车况描述（非必填）"
+                    android:maxLength="50"
+                    android:minHeight="120dp"
+                    android:textColor="@color/important_text_color_black"
+                    android:textColorHint="#ACACAC"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_word_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_add_remarks"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="(0/50)"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/txt_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/take_car_customer_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/customer_service"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/icon_custmer_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="联系客服"
+                    android:textColor="@color/important_text_color_black"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/inspect_confirm_tv"
+                style="@style/DefaultConfirmButton_Blue_Rectangle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/inspect_confirm"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

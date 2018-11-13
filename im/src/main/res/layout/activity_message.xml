@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="cn.lds.im.view.MessageActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_default"
+        android:background="@color/line_bg" />
+
+    <LinearLayout
+        android:id="@+id/messageactivity_nullview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/routedetail_margin259"
+            android:src="@drawable/icon_null_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/routedetail_margin72"
+            android:text="当前没有消息"
+            android:textColor="@color/default_color_black"
+            android:textSize="@dimen/default_text_size_title_body"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/messageactivity_pulllistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line_bg"
+        android:dividerHeight="@dimen/line_default"
+        android:scrollbars="none"/>
+
+</LinearLayout>

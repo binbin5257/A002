@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/important_color_brown"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_car_info"
+        layout="@layout/common_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_car_type_no"
+        android:layout_below="@id/common_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_car_type" />
+
+            <TextView
+                android:id="@+id/order_car_info_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_car_no" />
+
+            <TextView
+                android:id="@+id/order_car_info_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <cn.lds.im.view.widget.MarqueeTextView
+        android:id="@+id/usercar_minprice"
+        android:layout_width="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_car_type_no"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="@dimen/txt_size_12" />
+    <LinearLayout
+        android:id="@+id/ll_chargingrule"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/usercar_minprice"
+        android:layout_alignBottom="@id/usercar_minprice"
+        android:gravity="bottom"
+        android:paddingLeft="5dp">
+        <ImageView
+            android:id="@+id/chargingrule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_minprice" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

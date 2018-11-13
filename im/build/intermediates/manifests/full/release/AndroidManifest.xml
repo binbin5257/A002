@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leadingsoft.TCR"
+    android:anyDensity="true"
+    android:versionCode="126"
+    android:versionName="1.1.6" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 允许应用程序修改全局声音设置的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 允许一个程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许一个程序访问精良位置(如GPS) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许应用程序访问额外的位置提供命令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 允许程序写入API设置 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许KILL_BACKGROUND_PROCESSES -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 摇一摇的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:name="cn.lds.im.ImApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme" >
+
+        <!-- 百度地图KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0Bzj9TxyQQ4y6TvpGnOdBb6m5SrmrSEt" />
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="48ae76de3f" />
+        <!-- 百度地图语音导航 -->
+        <service
+            android:name="com.baidu.navi.location.f"
+            android:enabled="true" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="cn.lds.im.view.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" -->
+        <!-- android:configChanges="orientation|screenSize" /> -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105234224" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.lds.im.view.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="tcloud.mainactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.lds.im.view.QRCodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.CaptureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.LocatedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.view.LocatedRouteActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+        <receiver
+            android:name="cn.lds.chatcore.receiver.LogoutReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.leadingsoft.TCR.logout" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.lds.im.view.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.SwitchImageActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="cn.lds.im.view.WebViewHelpActivity"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:mimeType="application/pdf"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.lds.im.common.permission.PermissionController"
+            android:configChanges="orientation|screenSize"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.view.SelectFileActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="cn.lds.im.view.ConfirmOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ConfirmOrderApponitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.LoginActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="tcloud.loginactivity" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="cn.lds.im.view.TakeCarActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.view.TakeApponitCarActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="cn.lds.im.view.AboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.view.InspectActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="cn.lds.im.view.CustomerserviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.IllegalListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.IllegalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.RouteDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.CostSheetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.CashPledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ReceiptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.BuildReceiptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.MessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ProfileChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.IdentifyingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.RevertCarInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.RouteComentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leadingsoft.TCR.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ChoiceBookTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.ChoiceBookParkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.OrganizationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 费用明细 -->
+        <activity
+            android:name="cn.lds.im.view.CostDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的发票 -->
+        <activity
+            android:name="cn.lds.im.view.ReceiptListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 发票明细 -->
+        <activity
+            android:name="cn.lds.im.view.ReceiptInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 开发票成功 -->
+        <activity
+            android:name="cn.lds.im.view.ReceiptSuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 申请退款成功 -->
+        <activity
+            android:name="cn.lds.im.view.RebackSuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 获取优惠劵 -->
+        <activity
+            android:name="cn.lds.im.view.CouponListActivityNew"
+            android:screenOrientation="portrait" />
+        <!-- 获取可用优惠券列表 -->
+        <activity
+            android:name="cn.lds.im.view.CouponListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="cn.lds.im.view.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <!-- 导航界面 -->
+        <activity
+            android:name="cn.lds.im.view.NavigationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情/支付界面 -->
+        <activity
+            android:name="cn.lds.im.view.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 行程列表界面 -->
+        <activity
+            android:name="cn.lds.im.view.TripListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 行程 信息界面 -->
+        <activity
+            android:name="cn.lds.im.view.TripInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 送车上门，上门取车界面 -->
+        <activity
+            android:name="cn.lds.im.view.GetCarLocatedActivity"
+            android:screenOrientation="portrait" />
+        <!-- 送车上门，上门取车搜索地点界面 -->
+        <activity
+            android:name="cn.lds.im.view.SearchLocationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 车辆使用中界面 -->
+        <activity
+            android:name="cn.lds.im.view.CarInUseActivity"
+            android:screenOrientation="portrait" />
+        <!-- 已取消订单产生费用界面 -->
+        <activity
+            android:name="cn.lds.im.view.OrderCancelledActivity"
+            android:screenOrientation="portrait" />
+        <!-- 计费规则姐买你 -->
+        <activity
+            android:name="cn.lds.im.view.ChargingRuleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 芝麻信用绑定界面 -->
+        <activity
+            android:name="cn.lds.im.view.ZhiMaCreditActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充电桩列表页面 -->
+        <activity
+            android:name="cn.lds.im.view.ChargingListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 充电桩详情页面 -->
+        <activity
+            android:name="cn.lds.im.view.ChargingDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 首页面 -->
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.view.home.view.HomeActivity" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <!-- 芝麻信用 -->
+        <activity
+            android:name="cn.lds.im.view.ZhiMaAuthorizationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 附近场站列表 -->
+        <activity
+            android:name="cn.lds.im.view.NearStationListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 身份认证界面 -->
+        <activity
+            android:name="cn.lds.im.view.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用车申请界面 -->
+        <activity
+            android:name="cn.lds.im.view.ApplyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用车申请详情界面 -->
+        <activity
+            android:name="cn.lds.im.view.ApplyDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用车审批界面 -->
+        <activity
+            android:name="cn.lds.im.view.MarkingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用车审批详情界面 -->
+        <activity
+            android:name="cn.lds.im.view.MarkingDetaiAcitivity"
+            android:screenOrientation="portrait" />
+        <!-- 车况上报界面 -->
+        <activity
+            android:name="cn.lds.im.view.CarReportConditionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新版登录界面 -->
+        <activity
+            android:name="cn.lds.im.view.WuhuLoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="tcloud.loginactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 注册界面 -->
+        <activity
+            android:name="cn.lds.im.view.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name="cn.lds.im.view.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.bluebox.BluetoothLeService"
+            android:enabled="true" />
+
+        <!-- 车生活 -->
+        <!-- <activity -->
+        <!-- android:name="cn.lds.im.carlife.CarLifeActivity" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity
+            android:name="cn.lds.im.carlife.CarLifeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.carlife.NaviDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.OtherTripListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.im.view.AllotCarActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.ddtc.ddtcblesdk.DdtcBleService"
+            android:enabled="true"
+            android:exported="false" >
+        </service> <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity> <!-- alipay sdk end -->
+        <activity
+            android:name="cn.lds.chatcore.view.BaseActivity"
+            android:label="@string/title_activity_base" />
+        <activity
+            android:name="cn.lds.chatcore.view.CameraActivity"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.lds.chatcore.view.BNDemoGuideActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/hello_world" />
+
+        <service android:name="cn.lds.chatcore.imtp.ImtpService" />
+        <service android:name="cn.lds.chatcore.imtp.GuardService" />
+
+        <receiver
+            android:name="cn.lds.chatcore.receiver.RebootServiceReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.lds.chat.rebootservice" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

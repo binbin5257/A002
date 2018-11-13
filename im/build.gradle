@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.leadingsoft.TCR"
+        minSdkVersion 19
+        targetSdkVersion 21
+        multiDexEnabled true
+        versionCode 126
+        versionName "1.1.6"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+//    //打包路径以及包名
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null) {
+//                def o = outputFile.parentFile.parentFile.parentFile
+//                output.outputFile = new File(o.parent + "/apk"+ "/v${defaultConfig.versionName}"
+//                        , "${variant.buildType.name}_v${defaultConfig.versionName}.apk");
+//            }
+//        }
+//    }
+    packagingOptions {
+        // TODO  打包后有什么影响暂时不清楚，需要后续调查
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'leadingsoft'
+            keyPassword 'leadingsoft@08'
+            storeFile file('key')
+            storePassword 'leadingsoft@08'
+        }
+        releaseConfig {}
+    }
+
+    dexOptions {
+        incremental = true
+        preDexLibraries = false
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile project(':multi-image-selector')
+    compile 'com.jude:rollviewpager:1.4.6'
+    compile(name: 'tobsdk-release', ext: 'aar')
+    compile project(':chatcore')
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="@dimen/margin_size_7"
+        android:layout_marginRight="@dimen/margin_size_7"
+        android:layout_marginTop="7dp"
+        android:clickable="false">
+
+        <RelativeLayout
+            android:id="@+id/rlsdfasfads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:padding="10dp"
+            android:src="@drawable/pop_menu_bg_big">
+
+            <TextView
+                android:id="@+id/item_messagelistview_title"
+                android:layout_width="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:text="大家搜附近爱上对方就爱看大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方"
+                android:textColor="@color/message_name"
+                android:textSize="@dimen/txt_size_15" />
+
+            <TextView
+                android:id="@+id/item_messagelistview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/message_time"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/item_messagelistview_content"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/message_detail"
+            android:textSize="@dimen/default_text_size_description"
+            android:text="大家搜附近爱上对方就爱看大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方大家搜附近爱上对方就爱看老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方老师的房间按快了文件放到手机了看风景的垃圾地方卡拉斯加对方；啊；双方都"
+            android:layout_below="@+id/rlsdfasfads"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="7dp"
+             />
+
+
+        <ImageView
+            android:id="@+id/item_messagelistview_isnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_size_45"
+            android:clickable="false"
+            android:layout_marginRight="@dimen/margin_size_7"
+            android:src="@drawable/bg_red_dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

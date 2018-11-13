@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/White"
+              android:orientation="vertical"
+              tools:context="cn.lds.im.view.RouteDetailActivity">
+
+    <include layout="@layout/topbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/routedetailactivity_totalpay"
+                    android:textSize="@dimen/text_size_41"/>
+
+                <TextView
+                    android:id="@+id/routedetail_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rlyt_routedetail_sheet_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_bg"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/item_routelistview_next_cancel"
+                android:text="@string/routedetailactivity_sheet"
+                android:textColor="@color/costsheetactivity_costsheet"
+                android:textSize="@dimen/text_size_36"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/routedetailactivity_ordercode"
+                    android:textColor="@color/costsheetactivity_costsheet"
+                    android:textSize="@dimen/text_size_36"/>
+
+                <TextView
+                    android:id="@+id/routedetail_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/costsheetactivity_costsheet"
+                    android:textSize="@dimen/text_size_36"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pay_order_info_height">
+
+                <View
+                    android:id="@+id/pay_address_lin_v"
+                    android:layout_width="@dimen/par_order_info_lin"
+                    android:layout_height="@dimen/height_top_tab_no"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:background="@color/line_bg"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_left_1_default"
+                    android:layout_toLeftOf="@id/pay_address_lin_v"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/routedetail_reservationLocationName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:textColor="@color/costsheetactivity_costsheet"
+                            android:textSize="@dimen/text_size_36"/>
+
+                        <TextView
+                            android:id="@+id/routedetail_pickedUpTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:textColor="@color/costsheetactivity_costsheet"
+                            android:textSize="@dimen/text_size_36"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:src="@drawable/routedetaillactivity_qu"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                    android:layout_toRightOf="@id/pay_address_lin_v"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/routedetaillactivity_huan"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/routedetail_returnLocationName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textColor="@color/costsheetactivity_costsheet"
+                            android:textSize="@dimen/text_size_36"/>
+
+                        <TextView
+                            android:id="@+id/routedetail_droppedOffTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:textColor="@color/costsheetactivity_costsheet"
+                            android:textSize="@dimen/text_size_36"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/routedetail_height479">
+
+                <ImageView
+                    android:id="@+id/routedetaillactivity_flyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/routedetail_height479"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/routedetail_jia_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/route_jia"/>
+
+                    <ImageView
+                        android:id="@+id/routedetail_jian_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="31dp"
+                        android:src="@drawable/route_jian"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:background="@color/line_bg"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginTop="@dimen/routedetail_margin24"
+                android:background="@color/line_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/routedetail_margin24"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_left_1_default"
+                    android:paddingRight="@dimen/margin_left_1_default">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/routedetail_vehicleModelPic"
+                            android:layout_width="@dimen/map_bottomlayout_iv_width"
+                            android:layout_height="@dimen/map_bottomlayout_iv_height"
+                            android:layout_gravity="center" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_left_1_default"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/routedetail_vehicleModelName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/submenu_name"
+                                    android:textSize="@dimen/text_size_36"/>
+
+                                <TextView
+                                    android:id="@+id/routedetail_plateLicenseNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_left_1_default"
+                                    android:textColor="@color/textcolor_orange"
+                                    android:textSize="@dimen/text_size_36"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/routedetailactivity_kilometre"
+                                    android:textColor="@color/costsheetactivity_costsheet"
+                                    android:textSize="@dimen/text_size_36"/>
+
+
+                                <TextView
+                                    android:id="@+id/routedetail_xingshi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="0"
+                                    android:textColor="@color/costsheetactivity_costsheet"
+                                    android:textSize="@dimen/text_size_36"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/map_hlist_usercar_klomiter"
+                                    android:textColor="@color/costsheetactivity_costsheet"
+                                    android:textSize="@dimen/text_size_36"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/routedetailactivity_usetime"
+                                    android:textColor="@color/costsheetactivity_costsheet"
+                                    android:textSize="@dimen/text_size_36"/>
+
+
+                                <TextView
+                                    android:id="@+id/routedetail_yongshi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="0"
+                                    android:textColor="@color/costsheetactivity_costsheet"
+                                    android:textSize="@dimen/text_size_36"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/linesize"
+                android:layout_marginTop="@dimen/routedetail_margin24"
+                android:background="@color/line_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:layout_marginTop="@dimen/routedetail_margin24"
+                    android:background="@color/line_bg"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/route_height130"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_left_1_default"
+                    android:paddingRight="@dimen/margin_left_1_default">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/routedetailactivity_routecomments"
+                        android:textColor="@color/costsheetactivity_costsheet"
+                        android:textSize="@dimen/text_size_36"/>
+
+                    <RatingBar
+                        android:id="@+id/routedetail_ratingBar"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/routedetail_commentsfalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/text_bg"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/item_routelistview_next_cancel"
+                        android:text="@string/routedetailactivity_routecommentsfalse"
+                        android:textColor="@color/textcolor_orange"
+                        android:textSize="@dimen/text_size_36"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/routedetail_commentsllyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/linesize"
+                        android:layout_marginLeft="@dimen/margin_left_1_default"
+                        android:layout_marginRight="@dimen/margin_left_1_default"
+                        android:background="@color/line_bg"/>
+
+                    <TextView
+                        android:id="@+id/routedetail_commentstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_left_1_default"
+                        android:textColor="@color/costsheetactivity_costsheet"
+                        android:textSize="@dimen/text_size_36"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/linesize"
+                    android:background="@color/line_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/routedetaillactivity_share_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="@dimen/routedetail_margin27"
+                    android:drawableTop="@drawable/routedetaillactivity_share_wechat"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/routedetail_pading104"
+                    android:paddingRight="@dimen/routedetail_pading104"
+                    android:paddingTop="@dimen/routedetail_margin27"
+                    android:text="微信"
+                    android:textColor="@color/costsheetactivity_costsheet"
+                    android:textSize="@dimen/map_bottomlayout_textsize"/>
+
+                <TextView
+                    android:id="@+id/routedetaillactivity_share_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/routedetail_margin27"
+                    android:drawableTop="@drawable/routedetaillactivity_share_circle"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/routedetail_pading104"
+                    android:paddingRight="@dimen/routedetail_pading104"
+                    android:paddingTop="@dimen/routedetail_margin27"
+                    android:text="朋友圈"
+                    android:textColor="@color/costsheetactivity_costsheet"
+                    android:textSize="@dimen/map_bottomlayout_textsize"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

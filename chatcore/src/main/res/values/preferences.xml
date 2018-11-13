@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="managers">
+        <!--<item>cn.lds.chat.manager.AccountManager</item>-->
+        <!--<item>cn.lds.chat.manager.ChatSessionManager</item>-->
+        <!--<item>cn.lds.chat.manager.ContactsManager</item>-->
+        <!--<item>cn.lds.chat.manager.ContactsRequestManager</item>-->
+        <!--<item>cn.lds.chat.manager.FileManager</item>-->
+        <!--<item>cn.lds.chat.manager.MasterManager</item>-->
+        <!--<item>cn.lds.chat.manager.MessageManager</item>-->
+        <!--<item>cn.lds.chat.manager.MucManager</item>-->
+        <!--<item>cn.lds.chat.manager.NotificationManager</item>-->
+        <!--<item>cn.lds.chat.manager.PublicAccountManager</item>-->
+        <!--<item>cn.lds.chat.manager.SettingManager</item>-->
+        <!--<item>cn.lds.chat.manager.TagManager</item>-->
+        <!--<item>cn.lds.chat.manager.TimestampManager</item>-->
+        <!--<item>cn.lds.chat.manager.VcardsManager</item>-->
+        <!--<item>cn.lds.chat.manager.VersionManager</item>-->
+        <!--<item>cn.lds.chat.manager.VoiceManager</item>-->
+        <item>cn.lds.chatcore.manager.AccountManager</item>
+        <item>cn.lds.chatcore.manager.ChatSessionManager</item>
+        <item>cn.lds.chatcore.manager.ContactsManager</item>
+        <item>cn.lds.chatcore.manager.ContactsRequestManager</item>
+        <item>cn.lds.chatcore.manager.FileManager</item>
+        <item>cn.lds.chatcore.manager.PayManager</item>
+        <item>cn.lds.chatcore.manager.MasterManager</item>
+        <item>cn.lds.im.manager.MessageManager</item>
+        <item>cn.lds.chatcore.manager.MucManager</item>
+        <item>cn.lds.chatcore.manager.NotificationManager</item>
+        <item>cn.lds.chatcore.manager.PublicAccountManager</item>
+        <item>cn.lds.chatcore.manager.PublicWebManager</item>
+        <item>cn.lds.chatcore.manager.SettingManager</item>
+        <item>cn.lds.chatcore.manager.TagManager</item>
+        <item>cn.lds.chatcore.manager.TimestampManager</item>
+        <item>cn.lds.chatcore.manager.VcardsManager</item>
+        <item>cn.lds.chatcore.manager.VersionManager</item>
+        <item>cn.lds.chatcore.manager.VoiceManager</item>
+        <item>cn.lds.chatcore.imtp.ImtpManager</item>
+        <item>cn.lds.chatcore.manager.ImageLoaderManager</item>
+        <item>cn.lds.chatcore.manager.NetworkManager</item>
+        <item>cn.lds.im.manager.ImAccountManager</item>
+        <item>cn.lds.chatcore.common.datacatch.CacheManager</item>
+        <item>cn.lds.chatcore.manager.OrganizationManager</item>
+        <item>cn.lds.chatcore.manager.OrganizationMemberManager</item>
+        <item>cn.lds.chatcore.service.myfoot.MyFootManager</item>
+    </string-array>
+</resources>

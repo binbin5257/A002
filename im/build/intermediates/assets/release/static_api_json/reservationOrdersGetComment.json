@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "data": {
+    "id": 1,
+    "score": 2,  //评分
+    "content": "××××××××××"//评论内容
+  }
+}

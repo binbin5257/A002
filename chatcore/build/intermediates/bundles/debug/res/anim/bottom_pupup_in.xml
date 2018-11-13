@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- set 设置多种动画，如果启用动画加速器，需要加入下面两行配置！ -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/overshoot_interpolator"
+    android:shareInterpolator="true" >
+
+    <translate
+        android:detachWallpaper="true"
+        android:duration="500"
+        android:fromXDelta="0%"
+        android:fromYDelta="100%"
+        android:interpolator="@android:anim/overshoot_interpolator"
+        android:repeatCount="0"
+        android:toXDelta="0%"
+        android:toYDelta="0%" />
+
+</set>

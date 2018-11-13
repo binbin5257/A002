@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "headPortraitId": "xxxxxxxxxxx",      //头像
+  "name": "张三",                       //姓名
+  "gender":"MALE",                      //性别。枚举（MALE-男，FEMALE-女）
+  "email":"xxxxx@qq.com",               //邮箱
+  "identityFrontId":"xxxxxxxxxxxxxxx",  //身份证正面图片
+  "driveLicenseId":"xxxxxxxxxxxxxxx" ,   //驾驶证图片
+  "reviewType": "APPROVED"              //类型
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/pop_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="232dp"
+        android:layout_height="120dp"
+        android:background="@drawable/pop_menu_bg">
+
+        <TextView
+            android:id="@+id/eventselected_popcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_1_default"
+            android:layout_marginRight="@dimen/margin_left_1_default"
+            android:layout_marginTop="18dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="3"
+            android:textColor="#727272"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_top_lin_height"
+                android:layout_centerHorizontal="true"
+                android:background="@color/line_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/pop_confirm_botton_ryt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:id="@+id/eventselected_popsend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="#3cb4ff"
+                    android:textSize="@dimen/toast_text_size"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
